@@ -1,6 +1,9 @@
 # Secrets — never commit
 api_key.txt
 
+# Source deck lives at repo root; the published copy is docs/anime-professions-deck.pdf
+pitch_deck_anime_professions.pdf
+
 # Private working doc — kept out of the public repo (README.md is the public front door)
 PROJECT_PLAN.md
 

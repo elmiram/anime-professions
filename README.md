@@ -6,6 +6,8 @@ UN/ILO's standard occupation classification. The headline finding is the *absenc
 jobs anime never names at all.
 
 > 🔎 **Live explorer:** https://elmiram.github.io/anime-professions/ &nbsp;·&nbsp; search any profession, see which anime feature it, and how it trends by decade.
+>
+> 📊 **The deck:** [a 12-slide fun tour of the findings (PDF)](https://elmiram.github.io/anime-professions/anime-professions-deck.pdf).
 
 A few things it found:
 

@@ -98,6 +98,10 @@ def export(out_dir: str = "site") -> None:
     html = html.replace(anchor, SHIM + anchor, 1)
     (out / "index.html").write_text(html, encoding="utf-8")
     (out / ".nojekyll").write_text("", encoding="utf-8")
+    deck = config.ROOT / "pitch_deck_anime_professions.pdf"
+    if deck.exists():
+        shutil.copy(deck, out / "anime-professions-deck.pdf")
+        print("[static] included deck PDF")
 
     nfiles = sum(1 for _ in out.rglob("*") if _.is_file())
     size = sum(p.stat().st_size for p in out.rglob("*") if p.is_file())
