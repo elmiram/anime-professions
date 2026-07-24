@@ -1,0 +1,3716 @@
+[
+ {
+  "code": "1",
+  "title": "Managers",
+  "level": "major",
+  "parent": null
+ },
+ {
+  "code": "11",
+  "title": "Chief Executives, Senior Officials and Legislators",
+  "level": "submajor",
+  "parent": "1"
+ },
+ {
+  "code": "111",
+  "title": "Legislators and Senior Officials",
+  "level": "minor",
+  "parent": "11"
+ },
+ {
+  "code": "1111",
+  "title": "Legislators",
+  "level": "unit",
+  "parent": "111"
+ },
+ {
+  "code": "1112",
+  "title": "Senior Government Officials",
+  "level": "unit",
+  "parent": "111"
+ },
+ {
+  "code": "1113",
+  "title": "Traditional Chiefs and Heads of Villages",
+  "level": "unit",
+  "parent": "111"
+ },
+ {
+  "code": "1114",
+  "title": "Senior Officials of Special-interest Organizations",
+  "level": "unit",
+  "parent": "111"
+ },
+ {
+  "code": "112",
+  "title": "Managing Directors and Chief Executives",
+  "level": "minor",
+  "parent": "11"
+ },
+ {
+  "code": "1120",
+  "title": "Managing Directors and Chief Executives",
+  "level": "unit",
+  "parent": "112"
+ },
+ {
+  "code": "12",
+  "title": "Administrative and Commercial Managers",
+  "level": "submajor",
+  "parent": "1"
+ },
+ {
+  "code": "121",
+  "title": "Business Services and Administration Managers",
+  "level": "minor",
+  "parent": "12"
+ },
+ {
+  "code": "1211",
+  "title": "Finance Managers",
+  "level": "unit",
+  "parent": "121"
+ },
+ {
+  "code": "1212",
+  "title": "Human Resource Managers",
+  "level": "unit",
+  "parent": "121"
+ },
+ {
+  "code": "1213",
+  "title": "Policy and Planning Managers",
+  "level": "unit",
+  "parent": "121"
+ },
+ {
+  "code": "1219",
+  "title": "Business Services and Administration Managers Not Elsewhere Classified",
+  "level": "unit",
+  "parent": "121"
+ },
+ {
+  "code": "122",
+  "title": "Sales, Marketing and Development Managers",
+  "level": "minor",
+  "parent": "12"
+ },
+ {
+  "code": "1221",
+  "title": "Sales and Marketing Managers",
+  "level": "unit",
+  "parent": "122"
+ },
+ {
+  "code": "1222",
+  "title": "Advertising and Public Relations Managers",
+  "level": "unit",
+  "parent": "122"
+ },
+ {
+  "code": "1223",
+  "title": "Research and Development Managers",
+  "level": "unit",
+  "parent": "122"
+ },
+ {
+  "code": "13",
+  "title": "Production and Specialized Services Managers",
+  "level": "submajor",
+  "parent": "1"
+ },
+ {
+  "code": "131",
+  "title": "Production Managers in Agriculture, Forestry and Fisheries",
+  "level": "minor",
+  "parent": "13"
+ },
+ {
+  "code": "1311",
+  "title": "Agricultural and Forestry Production Managers",
+  "level": "unit",
+  "parent": "131"
+ },
+ {
+  "code": "1312",
+  "title": "Aquaculture and Fisheries Production Managers",
+  "level": "unit",
+  "parent": "131"
+ },
+ {
+  "code": "132",
+  "title": "Manufacturing, Mining, Construction and Distribution Managers",
+  "level": "minor",
+  "parent": "13"
+ },
+ {
+  "code": "1321",
+  "title": "Manufacturing Managers",
+  "level": "unit",
+  "parent": "132"
+ },
+ {
+  "code": "1322",
+  "title": "Mining Managers",
+  "level": "unit",
+  "parent": "132"
+ },
+ {
+  "code": "1323",
+  "title": "Construction Managers",
+  "level": "unit",
+  "parent": "132"
+ },
+ {
+  "code": "1324",
+  "title": "Supply, Distribution and Related Managers",
+  "level": "unit",
+  "parent": "132"
+ },
+ {
+  "code": "133",
+  "title": "Information and Communications Technology Services Managers",
+  "level": "minor",
+  "parent": "13"
+ },
+ {
+  "code": "1330",
+  "title": "Information and Communications Technology Services Managers",
+  "level": "unit",
+  "parent": "133"
+ },
+ {
+  "code": "134",
+  "title": "Professional Services Managers",
+  "level": "minor",
+  "parent": "13"
+ },
+ {
+  "code": "1341",
+  "title": "Child Care Services Managers",
+  "level": "unit",
+  "parent": "134"
+ },
+ {
+  "code": "1342",
+  "title": "Health Services Managers",
+  "level": "unit",
+  "parent": "134"
+ },
+ {
+  "code": "1343",
+  "title": "Aged Care Services Managers",
+  "level": "unit",
+  "parent": "134"
+ },
+ {
+  "code": "1344",
+  "title": "Social Welfare Managers",
+  "level": "unit",
+  "parent": "134"
+ },
+ {
+  "code": "1345",
+  "title": "Education Managers",
+  "level": "unit",
+  "parent": "134"
+ },
+ {
+  "code": "1346",
+  "title": "Financial and Insurance Services Branch Managers",
+  "level": "unit",
+  "parent": "134"
+ },
+ {
+  "code": "1349",
+  "title": "Professional Services Managers Not Elsewhere Classified",
+  "level": "unit",
+  "parent": "134"
+ },
+ {
+  "code": "14",
+  "title": "Hospitality, Retail and Other Services Managers",
+  "level": "submajor",
+  "parent": "1"
+ },
+ {
+  "code": "141",
+  "title": "Hotel and Restaurant Managers",
+  "level": "minor",
+  "parent": "14"
+ },
+ {
+  "code": "1411",
+  "title": "Hotel Managers",
+  "level": "unit",
+  "parent": "141"
+ },
+ {
+  "code": "1412",
+  "title": "Restaurant Managers",
+  "level": "unit",
+  "parent": "141"
+ },
+ {
+  "code": "142",
+  "title": "Retail and Wholesale Trade Managers",
+  "level": "minor",
+  "parent": "14"
+ },
+ {
+  "code": "1420",
+  "title": "Retail and Wholesale Trade Managers",
+  "level": "unit",
+  "parent": "142"
+ },
+ {
+  "code": "143",
+  "title": "Other Services Managers",
+  "level": "minor",
+  "parent": "14"
+ },
+ {
+  "code": "1431",
+  "title": "Sports, Recreation and Cultural Centre Managers",
+  "level": "unit",
+  "parent": "143"
+ },
+ {
+  "code": "1439",
+  "title": "Services Managers Not Elsewhere Classified",
+  "level": "unit",
+  "parent": "143"
+ },
+ {
+  "code": "2",
+  "title": "Professionals",
+  "level": "major",
+  "parent": null
+ },
+ {
+  "code": "21",
+  "title": "Science and Engineering Professionals",
+  "level": "submajor",
+  "parent": "2"
+ },
+ {
+  "code": "211",
+  "title": "Physical and Earth Science Professionals",
+  "level": "minor",
+  "parent": "21"
+ },
+ {
+  "code": "2111",
+  "title": "Physicists and Astronomers",
+  "level": "unit",
+  "parent": "211"
+ },
+ {
+  "code": "2112",
+  "title": "Meteorologists",
+  "level": "unit",
+  "parent": "211"
+ },
+ {
+  "code": "2113",
+  "title": "Chemists",
+  "level": "unit",
+  "parent": "211"
+ },
+ {
+  "code": "2114",
+  "title": "Geologists and Geophysicists",
+  "level": "unit",
+  "parent": "211"
+ },
+ {
+  "code": "212",
+  "title": "Mathematicians, Actuaries and Statisticians",
+  "level": "minor",
+  "parent": "21"
+ },
+ {
+  "code": "2120",
+  "title": "Mathematicians, Actuaries and Statisticians",
+  "level": "unit",
+  "parent": "212"
+ },
+ {
+  "code": "213",
+  "title": "Life Science Professionals",
+  "level": "minor",
+  "parent": "21"
+ },
+ {
+  "code": "2131",
+  "title": "Biologists, Botanists, Zoologists and Related Professionals",
+  "level": "unit",
+  "parent": "213"
+ },
+ {
+  "code": "2132",
+  "title": "Farming, Forestry and Fisheries Advisers",
+  "level": "unit",
+  "parent": "213"
+ },
+ {
+  "code": "2133",
+  "title": "Environmental Protection Professionals",
+  "level": "unit",
+  "parent": "213"
+ },
+ {
+  "code": "214",
+  "title": "Engineering Professionals (excluding Electrotechnology)",
+  "level": "minor",
+  "parent": "21"
+ },
+ {
+  "code": "2141",
+  "title": "Industrial and Production Engineers",
+  "level": "unit",
+  "parent": "214"
+ },
+ {
+  "code": "2142",
+  "title": "Civil Engineers",
+  "level": "unit",
+  "parent": "214"
+ },
+ {
+  "code": "2143",
+  "title": "Environmental Engineers",
+  "level": "unit",
+  "parent": "214"
+ },
+ {
+  "code": "2144",
+  "title": "Mechanical Engineers",
+  "level": "unit",
+  "parent": "214"
+ },
+ {
+  "code": "2145",
+  "title": "Chemical Engineers",
+  "level": "unit",
+  "parent": "214"
+ },
+ {
+  "code": "2146",
+  "title": "Mining Engineers, Metallurgists and Related Professionals",
+  "level": "unit",
+  "parent": "214"
+ },
+ {
+  "code": "2149",
+  "title": "Engineering Professionals Not Elsewhere Classified",
+  "level": "unit",
+  "parent": "214"
+ },
+ {
+  "code": "215",
+  "title": "Electrotechnology Engineers",
+  "level": "minor",
+  "parent": "21"
+ },
+ {
+  "code": "2151",
+  "title": "Electrical Engineers",
+  "level": "unit",
+  "parent": "215"
+ },
+ {
+  "code": "2152",
+  "title": "Electronics Engineers",
+  "level": "unit",
+  "parent": "215"
+ },
+ {
+  "code": "2153",
+  "title": "Telecommunications Engineers",
+  "level": "unit",
+  "parent": "215"
+ },
+ {
+  "code": "216",
+  "title": "Architects, Planners, Surveyors and Designers",
+  "level": "minor",
+  "parent": "21"
+ },
+ {
+  "code": "2161",
+  "title": "Building Architects",
+  "level": "unit",
+  "parent": "216"
+ },
+ {
+  "code": "2162",
+  "title": "Landscape Architects",
+  "level": "unit",
+  "parent": "216"
+ },
+ {
+  "code": "2163",
+  "title": "Product and Garment Designers",
+  "level": "unit",
+  "parent": "216"
+ },
+ {
+  "code": "2164",
+  "title": "Town and Traffic Planners",
+  "level": "unit",
+  "parent": "216"
+ },
+ {
+  "code": "2165",
+  "title": "Cartographers and Surveyors",
+  "level": "unit",
+  "parent": "216"
+ },
+ {
+  "code": "2166",
+  "title": "Graphic and Multimedia Designers",
+  "level": "unit",
+  "parent": "216"
+ },
+ {
+  "code": "22",
+  "title": "Health Professionals",
+  "level": "submajor",
+  "parent": "2"
+ },
+ {
+  "code": "221",
+  "title": "Medical Doctors",
+  "level": "minor",
+  "parent": "22"
+ },
+ {
+  "code": "2211",
+  "title": "Generalist Medical Practitioners",
+  "level": "unit",
+  "parent": "221"
+ },
+ {
+  "code": "2212",
+  "title": "Specialist Medical Practitioners",
+  "level": "unit",
+  "parent": "221"
+ },
+ {
+  "code": "222",
+  "title": "Nursing and Midwifery Professionals",
+  "level": "minor",
+  "parent": "22"
+ },
+ {
+  "code": "2221",
+  "title": "Nursing Professionals",
+  "level": "unit",
+  "parent": "222"
+ },
+ {
+  "code": "2222",
+  "title": "Midwifery Professionals",
+  "level": "unit",
+  "parent": "222"
+ },
+ {
+  "code": "223",
+  "title": "Traditional and Complementary Medicine Professionals",
+  "level": "minor",
+  "parent": "22"
+ },
+ {
+  "code": "2230",
+  "title": "Traditional and Complementary Medicine Professionals",
+  "level": "unit",
+  "parent": "223"
+ },
+ {
+  "code": "224",
+  "title": "Paramedical Practitioners",
+  "level": "minor",
+  "parent": "22"
+ },
+ {
+  "code": "2240",
+  "title": "Paramedical Practitioners",
+  "level": "unit",
+  "parent": "224"
+ },
+ {
+  "code": "225",
+  "title": "Veterinarians",
+  "level": "minor",
+  "parent": "22"
+ },
+ {
+  "code": "2250",
+  "title": "Veterinarians",
+  "level": "unit",
+  "parent": "225"
+ },
+ {
+  "code": "226",
+  "title": "Other Health Professionals",
+  "level": "minor",
+  "parent": "22"
+ },
+ {
+  "code": "2261",
+  "title": "Dentists",
+  "level": "unit",
+  "parent": "226"
+ },
+ {
+  "code": "2262",
+  "title": "Pharmacists",
+  "level": "unit",
+  "parent": "226"
+ },
+ {
+  "code": "2263",
+  "title": "Environmental and Occupational Health and Hygiene Professionals",
+  "level": "unit",
+  "parent": "226"
+ },
+ {
+  "code": "2264",
+  "title": "Physiotherapists",
+  "level": "unit",
+  "parent": "226"
+ },
+ {
+  "code": "2265",
+  "title": "Dieticians and Nutritionists",
+  "level": "unit",
+  "parent": "226"
+ },
+ {
+  "code": "2266",
+  "title": "Audiologists and Speech Therapists",
+  "level": "unit",
+  "parent": "226"
+ },
+ {
+  "code": "2267",
+  "title": "Optometrists and Ophthalmic Opticians",
+  "level": "unit",
+  "parent": "226"
+ },
+ {
+  "code": "2269",
+  "title": "Health Professionals Not Elsewhere Classified",
+  "level": "unit",
+  "parent": "226"
+ },
+ {
+  "code": "23",
+  "title": "Teaching Professionals",
+  "level": "submajor",
+  "parent": "2"
+ },
+ {
+  "code": "231",
+  "title": "University and Higher Education Teachers",
+  "level": "minor",
+  "parent": "23"
+ },
+ {
+  "code": "2310",
+  "title": "University and Higher Education Teachers",
+  "level": "unit",
+  "parent": "231"
+ },
+ {
+  "code": "232",
+  "title": "Vocational Education Teachers",
+  "level": "minor",
+  "parent": "23"
+ },
+ {
+  "code": "2320",
+  "title": "Vocational Education Teachers",
+  "level": "unit",
+  "parent": "232"
+ },
+ {
+  "code": "233",
+  "title": "Secondary Education Teachers",
+  "level": "minor",
+  "parent": "23"
+ },
+ {
+  "code": "2330",
+  "title": "Secondary Education Teachers",
+  "level": "unit",
+  "parent": "233"
+ },
+ {
+  "code": "234",
+  "title": "Primary School and Early Childhood Teachers",
+  "level": "minor",
+  "parent": "23"
+ },
+ {
+  "code": "2341",
+  "title": "Primary School Teachers",
+  "level": "unit",
+  "parent": "234"
+ },
+ {
+  "code": "2342",
+  "title": "Early Childhood Educators",
+  "level": "unit",
+  "parent": "234"
+ },
+ {
+  "code": "235",
+  "title": "Other Teaching Professionals",
+  "level": "minor",
+  "parent": "23"
+ },
+ {
+  "code": "2351",
+  "title": "Education Methods specialists",
+  "level": "unit",
+  "parent": "235"
+ },
+ {
+  "code": "2352",
+  "title": "Special Needs Teachers",
+  "level": "unit",
+  "parent": "235"
+ },
+ {
+  "code": "2353",
+  "title": "Other Language Teachers",
+  "level": "unit",
+  "parent": "235"
+ },
+ {
+  "code": "2354",
+  "title": "Other Music Teachers",
+  "level": "unit",
+  "parent": "235"
+ },
+ {
+  "code": "2355",
+  "title": "Other Arts Teachers",
+  "level": "unit",
+  "parent": "235"
+ },
+ {
+  "code": "2356",
+  "title": "Information Technology Trainers",
+  "level": "unit",
+  "parent": "235"
+ },
+ {
+  "code": "2359",
+  "title": "Teaching Professionals Not Elsewhere Classified",
+  "level": "unit",
+  "parent": "235"
+ },
+ {
+  "code": "24",
+  "title": "Business and Administration Professionals",
+  "level": "submajor",
+  "parent": "2"
+ },
+ {
+  "code": "241",
+  "title": "Finance Professionals",
+  "level": "minor",
+  "parent": "24"
+ },
+ {
+  "code": "2411",
+  "title": "Accountants",
+  "level": "unit",
+  "parent": "241"
+ },
+ {
+  "code": "2412",
+  "title": "Financial and Investment Advisers",
+  "level": "unit",
+  "parent": "241"
+ },
+ {
+  "code": "2413",
+  "title": "Financial Analysts",
+  "level": "unit",
+  "parent": "241"
+ },
+ {
+  "code": "242",
+  "title": "Administration Professionals",
+  "level": "minor",
+  "parent": "24"
+ },
+ {
+  "code": "2421",
+  "title": "Management and Organization Analysts",
+  "level": "unit",
+  "parent": "242"
+ },
+ {
+  "code": "2422",
+  "title": "Policy Administration Professionals",
+  "level": "unit",
+  "parent": "242"
+ },
+ {
+  "code": "2423",
+  "title": "Personnel and Careers Professionals",
+  "level": "unit",
+  "parent": "242"
+ },
+ {
+  "code": "2424",
+  "title": "Training and Staff Development Professionals",
+  "level": "unit",
+  "parent": "242"
+ },
+ {
+  "code": "243",
+  "title": "Sales, Marketing and Public Relations Professionals",
+  "level": "minor",
+  "parent": "24"
+ },
+ {
+  "code": "2431",
+  "title": "Advertising and Marketing Professionals",
+  "level": "unit",
+  "parent": "243"
+ },
+ {
+  "code": "2432",
+  "title": "Public Relations Professionals",
+  "level": "unit",
+  "parent": "243"
+ },
+ {
+  "code": "2433",
+  "title": "Technical and Medical Sales Professionals (excluding ICT)",
+  "level": "unit",
+  "parent": "243"
+ },
+ {
+  "code": "2434",
+  "title": "Information and Communications Technology Sales Professionals",
+  "level": "unit",
+  "parent": "243"
+ },
+ {
+  "code": "25",
+  "title": "Information and Communications Technology Professionals",
+  "level": "submajor",
+  "parent": "2"
+ },
+ {
+  "code": "251",
+  "title": "Software and Applications Developers and Analysts",
+  "level": "minor",
+  "parent": "25"
+ },
+ {
+  "code": "2511",
+  "title": "Systems Analysts",
+  "level": "unit",
+  "parent": "251"
+ },
+ {
+  "code": "2512",
+  "title": "Software Developers",
+  "level": "unit",
+  "parent": "251"
+ },
+ {
+  "code": "2513",
+  "title": "Web and Multimedia Developers",
+  "level": "unit",
+  "parent": "251"
+ },
+ {
+  "code": "2514",
+  "title": "Applications Programmers",
+  "level": "unit",
+  "parent": "251"
+ },
+ {
+  "code": "2519",
+  "title": "Software and Applications Developers and Analysts Not Elsewhere Classified",
+  "level": "unit",
+  "parent": "251"
+ },
+ {
+  "code": "252",
+  "title": "Database and Network Professionals",
+  "level": "minor",
+  "parent": "25"
+ },
+ {
+  "code": "2521",
+  "title": "Database Designers and Administrators",
+  "level": "unit",
+  "parent": "252"
+ },
+ {
+  "code": "2522",
+  "title": "Systems Administrators",
+  "level": "unit",
+  "parent": "252"
+ },
+ {
+  "code": "2523",
+  "title": "Computer Network Professionals",
+  "level": "unit",
+  "parent": "252"
+ },
+ {
+  "code": "2529",
+  "title": "Database and Network Professionals Not Elsewhere Classified",
+  "level": "unit",
+  "parent": "252"
+ },
+ {
+  "code": "26",
+  "title": "Legal, Social and Cultural Professionals",
+  "level": "submajor",
+  "parent": "2"
+ },
+ {
+  "code": "261",
+  "title": "Legal Professionals",
+  "level": "minor",
+  "parent": "26"
+ },
+ {
+  "code": "2611",
+  "title": "Lawyers",
+  "level": "unit",
+  "parent": "261"
+ },
+ {
+  "code": "2612",
+  "title": "Judges",
+  "level": "unit",
+  "parent": "261"
+ },
+ {
+  "code": "2619",
+  "title": "Legal Professionals Not Elsewhere Classified",
+  "level": "unit",
+  "parent": "261"
+ },
+ {
+  "code": "262",
+  "title": "Librarians, Archivists and Curators",
+  "level": "minor",
+  "parent": "26"
+ },
+ {
+  "code": "2621",
+  "title": "Archivists and Curators",
+  "level": "unit",
+  "parent": "262"
+ },
+ {
+  "code": "2622",
+  "title": "Librarians and Related Information Professionals",
+  "level": "unit",
+  "parent": "262"
+ },
+ {
+  "code": "263",
+  "title": "Social and Religious Professionals",
+  "level": "minor",
+  "parent": "26"
+ },
+ {
+  "code": "2631",
+  "title": "Economists",
+  "level": "unit",
+  "parent": "263"
+ },
+ {
+  "code": "2632",
+  "title": "Sociologists, Anthropologists and Related Professionals",
+  "level": "unit",
+  "parent": "263"
+ },
+ {
+  "code": "2633",
+  "title": "Philosophers, Historians and Political Scientists",
+  "level": "unit",
+  "parent": "263"
+ },
+ {
+  "code": "2634",
+  "title": "Psychologists",
+  "level": "unit",
+  "parent": "263"
+ },
+ {
+  "code": "2635",
+  "title": "Social Work and Counselling Professionals",
+  "level": "unit",
+  "parent": "263"
+ },
+ {
+  "code": "2636",
+  "title": "Religious Professionals",
+  "level": "unit",
+  "parent": "263"
+ },
+ {
+  "code": "264",
+  "title": "Authors, Journalists and Linguists",
+  "level": "minor",
+  "parent": "26"
+ },
+ {
+  "code": "2641",
+  "title": "Authors and Related Writers",
+  "level": "unit",
+  "parent": "264"
+ },
+ {
+  "code": "2642",
+  "title": "Journalists",
+  "level": "unit",
+  "parent": "264"
+ },
+ {
+  "code": "2643",
+  "title": "Translators, Interpreters and Other Linguists",
+  "level": "unit",
+  "parent": "264"
+ },
+ {
+  "code": "265",
+  "title": "Creative and Performing Artists",
+  "level": "minor",
+  "parent": "26"
+ },
+ {
+  "code": "2651",
+  "title": "Visual Artists",
+  "level": "unit",
+  "parent": "265"
+ },
+ {
+  "code": "2652",
+  "title": "Musicians, Singers and Composers",
+  "level": "unit",
+  "parent": "265"
+ },
+ {
+  "code": "2653",
+  "title": "Dancers and Choreographers",
+  "level": "unit",
+  "parent": "265"
+ },
+ {
+  "code": "2654",
+  "title": "Film, Stage and Related Directors and Producers",
+  "level": "unit",
+  "parent": "265"
+ },
+ {
+  "code": "2655",
+  "title": "Actors",
+  "level": "unit",
+  "parent": "265"
+ },
+ {
+  "code": "2656",
+  "title": "Announcers on Radio, Television and Other Media",
+  "level": "unit",
+  "parent": "265"
+ },
+ {
+  "code": "2659",
+  "title": "Creative and Performing Artists Not Elsewhere Classified",
+  "level": "unit",
+  "parent": "265"
+ },
+ {
+  "code": "3",
+  "title": "Technicians and Associate Professionals",
+  "level": "major",
+  "parent": null
+ },
+ {
+  "code": "31",
+  "title": "Science and Engineering Associate Professionals",
+  "level": "submajor",
+  "parent": "3"
+ },
+ {
+  "code": "311",
+  "title": "Physical and Engineering Science Technicians",
+  "level": "minor",
+  "parent": "31"
+ },
+ {
+  "code": "3111",
+  "title": "Chemical and Physical Science Technicians",
+  "level": "unit",
+  "parent": "311"
+ },
+ {
+  "code": "3112",
+  "title": "Civil Engineering Technicians",
+  "level": "unit",
+  "parent": "311"
+ },
+ {
+  "code": "3113",
+  "title": "Electrical Engineering Technicians",
+  "level": "unit",
+  "parent": "311"
+ },
+ {
+  "code": "3114",
+  "title": "Electronics Engineering Technicians",
+  "level": "unit",
+  "parent": "311"
+ },
+ {
+  "code": "3115",
+  "title": "Mechanical Engineering Technicians",
+  "level": "unit",
+  "parent": "311"
+ },
+ {
+  "code": "3116",
+  "title": "Chemical Engineering Technicians",
+  "level": "unit",
+  "parent": "311"
+ },
+ {
+  "code": "3117",
+  "title": "Mining and Metallurgical Technicians",
+  "level": "unit",
+  "parent": "311"
+ },
+ {
+  "code": "3118",
+  "title": "Draughtspersons",
+  "level": "unit",
+  "parent": "311"
+ },
+ {
+  "code": "3119",
+  "title": "Physical and Engineering Science Technicians Not Elsewhere Classified",
+  "level": "unit",
+  "parent": "311"
+ },
+ {
+  "code": "312",
+  "title": "Mining, Manufacturing and Construction Supervisors",
+  "level": "minor",
+  "parent": "31"
+ },
+ {
+  "code": "3121",
+  "title": "Mining Supervisors",
+  "level": "unit",
+  "parent": "312"
+ },
+ {
+  "code": "3122",
+  "title": "Manufacturing Supervisors",
+  "level": "unit",
+  "parent": "312"
+ },
+ {
+  "code": "3123",
+  "title": "Construction Supervisors",
+  "level": "unit",
+  "parent": "312"
+ },
+ {
+  "code": "313",
+  "title": "Process Control Technicians",
+  "level": "minor",
+  "parent": "31"
+ },
+ {
+  "code": "3131",
+  "title": "Power Production Plant Operators",
+  "level": "unit",
+  "parent": "313"
+ },
+ {
+  "code": "3132",
+  "title": "Incinerator and Water Treatment Plant Operators",
+  "level": "unit",
+  "parent": "313"
+ },
+ {
+  "code": "3133",
+  "title": "Chemical Processing Plant Controllers",
+  "level": "unit",
+  "parent": "313"
+ },
+ {
+  "code": "3134",
+  "title": "Petroleum and Natural Gas Refining Plant Operators",
+  "level": "unit",
+  "parent": "313"
+ },
+ {
+  "code": "3135",
+  "title": "Metal Production Process Controllers",
+  "level": "unit",
+  "parent": "313"
+ },
+ {
+  "code": "3139",
+  "title": "Process Control Technicians Not Elsewhere Classified",
+  "level": "unit",
+  "parent": "313"
+ },
+ {
+  "code": "314",
+  "title": "Life Science Technicians and Related Associate Professionals",
+  "level": "minor",
+  "parent": "31"
+ },
+ {
+  "code": "3141",
+  "title": "Life Science Technicians (excluding Medical)",
+  "level": "unit",
+  "parent": "314"
+ },
+ {
+  "code": "3142",
+  "title": "Agricultural Technicians",
+  "level": "unit",
+  "parent": "314"
+ },
+ {
+  "code": "3143",
+  "title": "Forestry Technicians",
+  "level": "unit",
+  "parent": "314"
+ },
+ {
+  "code": "315",
+  "title": "Ship and Aircraft Controllers and Technicians",
+  "level": "minor",
+  "parent": "31"
+ },
+ {
+  "code": "3151",
+  "title": "Ships’ Engineers",
+  "level": "unit",
+  "parent": "315"
+ },
+ {
+  "code": "3152",
+  "title": "Ships’ Deck Officers and Pilots",
+  "level": "unit",
+  "parent": "315"
+ },
+ {
+  "code": "3153",
+  "title": "Aircraft Pilots and Related Associate Professionals",
+  "level": "unit",
+  "parent": "315"
+ },
+ {
+  "code": "3154",
+  "title": "Air Traffic Controllers",
+  "level": "unit",
+  "parent": "315"
+ },
+ {
+  "code": "3155",
+  "title": "Air Traffic Safety Electronics Technicians",
+  "level": "unit",
+  "parent": "315"
+ },
+ {
+  "code": "32",
+  "title": "Health Associate Professionals",
+  "level": "submajor",
+  "parent": "3"
+ },
+ {
+  "code": "321",
+  "title": "Medical and Pharmaceutical Technicians",
+  "level": "minor",
+  "parent": "32"
+ },
+ {
+  "code": "3211",
+  "title": "Medical Imaging and Therapeutic Equipment Technicians",
+  "level": "unit",
+  "parent": "321"
+ },
+ {
+  "code": "3212",
+  "title": "Medical and Pathology Laboratory Technicians",
+  "level": "unit",
+  "parent": "321"
+ },
+ {
+  "code": "3213",
+  "title": "Pharmaceutical Technicians and Assistants",
+  "level": "unit",
+  "parent": "321"
+ },
+ {
+  "code": "3214",
+  "title": "Medical and Dental Prosthetic Technicians",
+  "level": "unit",
+  "parent": "321"
+ },
+ {
+  "code": "322",
+  "title": "Nursing and Midwifery Associate Professionals",
+  "level": "minor",
+  "parent": "32"
+ },
+ {
+  "code": "3221",
+  "title": "Nursing Associate Professionals",
+  "level": "unit",
+  "parent": "322"
+ },
+ {
+  "code": "3222",
+  "title": "Midwifery Associate Professionals",
+  "level": "unit",
+  "parent": "322"
+ },
+ {
+  "code": "323",
+  "title": "Traditional and Complementary Medicine Associate Professionals",
+  "level": "minor",
+  "parent": "32"
+ },
+ {
+  "code": "3230",
+  "title": "Traditional and Complementary Medicine Associate Professionals",
+  "level": "unit",
+  "parent": "323"
+ },
+ {
+  "code": "324",
+  "title": "Veterinary Technicians and Assistants",
+  "level": "minor",
+  "parent": "32"
+ },
+ {
+  "code": "3240",
+  "title": "Veterinary Technicians and Assistants",
+  "level": "unit",
+  "parent": "324"
+ },
+ {
+  "code": "325",
+  "title": "Other Health Associate Professionals",
+  "level": "minor",
+  "parent": "32"
+ },
+ {
+  "code": "3251",
+  "title": "Dental Assistants and Therapists",
+  "level": "unit",
+  "parent": "325"
+ },
+ {
+  "code": "3252",
+  "title": "Medical Records and Health Information Technicians",
+  "level": "unit",
+  "parent": "325"
+ },
+ {
+  "code": "3253",
+  "title": "Community Health Workers",
+  "level": "unit",
+  "parent": "325"
+ },
+ {
+  "code": "3254",
+  "title": "Dispensing Opticians",
+  "level": "unit",
+  "parent": "325"
+ },
+ {
+  "code": "3255",
+  "title": "Physiotherapy Technicians and Assistants",
+  "level": "unit",
+  "parent": "325"
+ },
+ {
+  "code": "3256",
+  "title": "Medical Assistants",
+  "level": "unit",
+  "parent": "325"
+ },
+ {
+  "code": "3257",
+  "title": "Environmental and Occupational Health Inspectors and Associates",
+  "level": "unit",
+  "parent": "325"
+ },
+ {
+  "code": "3258",
+  "title": "Ambulance Workers",
+  "level": "unit",
+  "parent": "325"
+ },
+ {
+  "code": "3259",
+  "title": "Health Associate Professionals Not Elsewhere Classified",
+  "level": "unit",
+  "parent": "325"
+ },
+ {
+  "code": "33",
+  "title": "Business and Administration Associate Professionals",
+  "level": "submajor",
+  "parent": "3"
+ },
+ {
+  "code": "331",
+  "title": "Financial and Mathematical Associate Professionals",
+  "level": "minor",
+  "parent": "33"
+ },
+ {
+  "code": "3311",
+  "title": "Securities and Finance Dealers and Brokers",
+  "level": "unit",
+  "parent": "331"
+ },
+ {
+  "code": "3312",
+  "title": "Credit and Loans Officers",
+  "level": "unit",
+  "parent": "331"
+ },
+ {
+  "code": "3313",
+  "title": "Accounting Associate Professionals",
+  "level": "unit",
+  "parent": "331"
+ },
+ {
+  "code": "3314",
+  "title": "Statistical, Mathematical and Related Associate Professionals",
+  "level": "unit",
+  "parent": "331"
+ },
+ {
+  "code": "3315",
+  "title": "Valuers and Loss Assessors",
+  "level": "unit",
+  "parent": "331"
+ },
+ {
+  "code": "332",
+  "title": "Sales and Purchasing Agents and Brokers",
+  "level": "minor",
+  "parent": "33"
+ },
+ {
+  "code": "3321",
+  "title": "Insurance Representatives",
+  "level": "unit",
+  "parent": "332"
+ },
+ {
+  "code": "3322",
+  "title": "Commercial Sales Representatives",
+  "level": "unit",
+  "parent": "332"
+ },
+ {
+  "code": "3323",
+  "title": "Buyers",
+  "level": "unit",
+  "parent": "332"
+ },
+ {
+  "code": "3324",
+  "title": "Trade Brokers",
+  "level": "unit",
+  "parent": "332"
+ },
+ {
+  "code": "333",
+  "title": "Business Services Agents",
+  "level": "minor",
+  "parent": "33"
+ },
+ {
+  "code": "3331",
+  "title": "Clearing and Forwarding Agents",
+  "level": "unit",
+  "parent": "333"
+ },
+ {
+  "code": "3332",
+  "title": "Conference and Event Planners",
+  "level": "unit",
+  "parent": "333"
+ },
+ {
+  "code": "3333",
+  "title": "Employment Agents and Contractors",
+  "level": "unit",
+  "parent": "333"
+ },
+ {
+  "code": "3334",
+  "title": "Real Estate Agents and Property Managers",
+  "level": "unit",
+  "parent": "333"
+ },
+ {
+  "code": "3339",
+  "title": "Business Services Agents Not Elsewhere Classified",
+  "level": "unit",
+  "parent": "333"
+ },
+ {
+  "code": "334",
+  "title": "Administrative and Specialized Secretaries",
+  "level": "minor",
+  "parent": "33"
+ },
+ {
+  "code": "3341",
+  "title": "Office Supervisors",
+  "level": "unit",
+  "parent": "334"
+ },
+ {
+  "code": "3342",
+  "title": "Legal Secretaries",
+  "level": "unit",
+  "parent": "334"
+ },
+ {
+  "code": "3343",
+  "title": "Administrative and Executive Secretaries",
+  "level": "unit",
+  "parent": "334"
+ },
+ {
+  "code": "3344",
+  "title": "Medical Secretaries",
+  "level": "unit",
+  "parent": "334"
+ },
+ {
+  "code": "335",
+  "title": "Government Regulatory Associate Professionals",
+  "level": "minor",
+  "parent": "33"
+ },
+ {
+  "code": "3351",
+  "title": "Customs and Border Inspectors",
+  "level": "unit",
+  "parent": "335"
+ },
+ {
+  "code": "3352",
+  "title": "Government Tax and Excise Officials",
+  "level": "unit",
+  "parent": "335"
+ },
+ {
+  "code": "3353",
+  "title": "Government Social Benefits Officials",
+  "level": "unit",
+  "parent": "335"
+ },
+ {
+  "code": "3354",
+  "title": "Government Licensing Officials",
+  "level": "unit",
+  "parent": "335"
+ },
+ {
+  "code": "3355",
+  "title": "Police Inspectors and Detectives",
+  "level": "unit",
+  "parent": "335"
+ },
+ {
+  "code": "3359",
+  "title": "Government Regulatory Associate Professionals Not Elsewhere Classified",
+  "level": "unit",
+  "parent": "335"
+ },
+ {
+  "code": "34",
+  "title": "Legal, Social, Cultural and Related Associate Professionals",
+  "level": "submajor",
+  "parent": "3"
+ },
+ {
+  "code": "341",
+  "title": "Legal, Social and Religious Associate Professionals",
+  "level": "minor",
+  "parent": "34"
+ },
+ {
+  "code": "3411",
+  "title": "Legal and Related Associate Professionals",
+  "level": "unit",
+  "parent": "341"
+ },
+ {
+  "code": "3412",
+  "title": "Social Work Associate Professionals",
+  "level": "unit",
+  "parent": "341"
+ },
+ {
+  "code": "3413",
+  "title": "Religious Associate Professionals",
+  "level": "unit",
+  "parent": "341"
+ },
+ {
+  "code": "342",
+  "title": "Sports and Fitness Workers",
+  "level": "minor",
+  "parent": "34"
+ },
+ {
+  "code": "3421",
+  "title": "Athletes and Sports Players",
+  "level": "unit",
+  "parent": "342"
+ },
+ {
+  "code": "3422",
+  "title": "Sports Coaches, Instructors and Officials",
+  "level": "unit",
+  "parent": "342"
+ },
+ {
+  "code": "3423",
+  "title": "Fitness and Recreation Instructors and Programme Leaders",
+  "level": "unit",
+  "parent": "342"
+ },
+ {
+  "code": "343",
+  "title": "Artistic, Cultural and Culinary Associate Professionals",
+  "level": "minor",
+  "parent": "34"
+ },
+ {
+  "code": "3431",
+  "title": "Photographers",
+  "level": "unit",
+  "parent": "343"
+ },
+ {
+  "code": "3432",
+  "title": "Interior Designers and Decorators",
+  "level": "unit",
+  "parent": "343"
+ },
+ {
+  "code": "3433",
+  "title": "Gallery, Museum and Library Technicians",
+  "level": "unit",
+  "parent": "343"
+ },
+ {
+  "code": "3434",
+  "title": "Chefs",
+  "level": "unit",
+  "parent": "343"
+ },
+ {
+  "code": "3435",
+  "title": "Other Artistic and Cultural Associate Professionals",
+  "level": "unit",
+  "parent": "343"
+ },
+ {
+  "code": "35",
+  "title": "Information and Communications Technicians",
+  "level": "submajor",
+  "parent": "3"
+ },
+ {
+  "code": "351",
+  "title": "Information and Communications Technology Operations and User Support Technicians",
+  "level": "minor",
+  "parent": "35"
+ },
+ {
+  "code": "3511",
+  "title": "Information and Communications Technology Operations Technicians",
+  "level": "unit",
+  "parent": "351"
+ },
+ {
+  "code": "3512",
+  "title": "Information and Communications Technology User Support Technicians",
+  "level": "unit",
+  "parent": "351"
+ },
+ {
+  "code": "3513",
+  "title": "Computer Network and Systems Technicians",
+  "level": "unit",
+  "parent": "351"
+ },
+ {
+  "code": "3514",
+  "title": "Web Technicians",
+  "level": "unit",
+  "parent": "351"
+ },
+ {
+  "code": "352",
+  "title": "Telecommunications and Broadcasting Technicians",
+  "level": "minor",
+  "parent": "35"
+ },
+ {
+  "code": "3521",
+  "title": "Broadcasting and Audiovisual Technicians",
+  "level": "unit",
+  "parent": "352"
+ },
+ {
+  "code": "3522",
+  "title": "Telecommunications Engineering Technicians",
+  "level": "unit",
+  "parent": "352"
+ },
+ {
+  "code": "4",
+  "title": "Clerical Support Workers",
+  "level": "major",
+  "parent": null
+ },
+ {
+  "code": "41",
+  "title": "General and Keyboard Clerks",
+  "level": "submajor",
+  "parent": "4"
+ },
+ {
+  "code": "411",
+  "title": "General Office Clerks",
+  "level": "minor",
+  "parent": "41"
+ },
+ {
+  "code": "4110",
+  "title": "General Office Clerks",
+  "level": "unit",
+  "parent": "411"
+ },
+ {
+  "code": "412",
+  "title": "Secretaries (general)",
+  "level": "minor",
+  "parent": "41"
+ },
+ {
+  "code": "4120",
+  "title": "Secretaries (general)",
+  "level": "unit",
+  "parent": "412"
+ },
+ {
+  "code": "413",
+  "title": "Keyboard Operators",
+  "level": "minor",
+  "parent": "41"
+ },
+ {
+  "code": "4131",
+  "title": "Typists and Word Processing Operators",
+  "level": "unit",
+  "parent": "413"
+ },
+ {
+  "code": "4132",
+  "title": "Data Entry Clerks",
+  "level": "unit",
+  "parent": "413"
+ },
+ {
+  "code": "42",
+  "title": "Customer Services Clerks",
+  "level": "submajor",
+  "parent": "4"
+ },
+ {
+  "code": "421",
+  "title": "Tellers, Money Collectors and Related Clerks",
+  "level": "minor",
+  "parent": "42"
+ },
+ {
+  "code": "4211",
+  "title": "Bank Tellers and Related Clerks",
+  "level": "unit",
+  "parent": "421"
+ },
+ {
+  "code": "4212",
+  "title": "Bookmakers, Croupiers and Related Gaming Workers",
+  "level": "unit",
+  "parent": "421"
+ },
+ {
+  "code": "4213",
+  "title": "Pawnbrokers and Money-lenders",
+  "level": "unit",
+  "parent": "421"
+ },
+ {
+  "code": "4214",
+  "title": "Debt Collectors and Related Workers",
+  "level": "unit",
+  "parent": "421"
+ },
+ {
+  "code": "422",
+  "title": "Client Information Workers",
+  "level": "minor",
+  "parent": "42"
+ },
+ {
+  "code": "4221",
+  "title": "Travel Consultants and Clerks",
+  "level": "unit",
+  "parent": "422"
+ },
+ {
+  "code": "4222",
+  "title": "Contact Centre Information Clerks",
+  "level": "unit",
+  "parent": "422"
+ },
+ {
+  "code": "4223",
+  "title": "Telephone Switchboard Operators",
+  "level": "unit",
+  "parent": "422"
+ },
+ {
+  "code": "4224",
+  "title": "Hotel Receptionists",
+  "level": "unit",
+  "parent": "422"
+ },
+ {
+  "code": "4225",
+  "title": "Inquiry Clerks",
+  "level": "unit",
+  "parent": "422"
+ },
+ {
+  "code": "4226",
+  "title": "Receptionists (general)",
+  "level": "unit",
+  "parent": "422"
+ },
+ {
+  "code": "4227",
+  "title": "Survey and Market Research Interviewers",
+  "level": "unit",
+  "parent": "422"
+ },
+ {
+  "code": "4229",
+  "title": "Client Information Workers Not Elsewhere Classified",
+  "level": "unit",
+  "parent": "422"
+ },
+ {
+  "code": "43",
+  "title": "Numerical and Material Recording Clerks",
+  "level": "submajor",
+  "parent": "4"
+ },
+ {
+  "code": "431",
+  "title": "Numerical Clerks",
+  "level": "minor",
+  "parent": "43"
+ },
+ {
+  "code": "4311",
+  "title": "Accounting and Bookkeeping Clerks",
+  "level": "unit",
+  "parent": "431"
+ },
+ {
+  "code": "4312",
+  "title": "Statistical, Finance and Insurance Clerks",
+  "level": "unit",
+  "parent": "431"
+ },
+ {
+  "code": "4313",
+  "title": "Payroll Clerks",
+  "level": "unit",
+  "parent": "431"
+ },
+ {
+  "code": "432",
+  "title": "Material Recording and Transport Clerks",
+  "level": "minor",
+  "parent": "43"
+ },
+ {
+  "code": "4321",
+  "title": "Stock Clerks",
+  "level": "unit",
+  "parent": "432"
+ },
+ {
+  "code": "4322",
+  "title": "Production Clerks",
+  "level": "unit",
+  "parent": "432"
+ },
+ {
+  "code": "4323",
+  "title": "Transport Clerks",
+  "level": "unit",
+  "parent": "432"
+ },
+ {
+  "code": "44",
+  "title": "Other Clerical Support Workers",
+  "level": "submajor",
+  "parent": "4"
+ },
+ {
+  "code": "441",
+  "title": "Other Clerical Support Workers",
+  "level": "minor",
+  "parent": "44"
+ },
+ {
+  "code": "4411",
+  "title": "Library Clerks",
+  "level": "unit",
+  "parent": "441"
+ },
+ {
+  "code": "4412",
+  "title": "Mail Carriers and Sorting Clerks",
+  "level": "unit",
+  "parent": "441"
+ },
+ {
+  "code": "4413",
+  "title": "Coding, Proofreading and Related Clerks",
+  "level": "unit",
+  "parent": "441"
+ },
+ {
+  "code": "4414",
+  "title": "Scribes and Related Workers",
+  "level": "unit",
+  "parent": "441"
+ },
+ {
+  "code": "4415",
+  "title": "Filing and Copying Clerks",
+  "level": "unit",
+  "parent": "441"
+ },
+ {
+  "code": "4416",
+  "title": "Personnel Clerks",
+  "level": "unit",
+  "parent": "441"
+ },
+ {
+  "code": "4419",
+  "title": "Clerical Support Workers Not Elsewhere Classified",
+  "level": "unit",
+  "parent": "441"
+ },
+ {
+  "code": "5",
+  "title": "Services And Sales Workers",
+  "level": "major",
+  "parent": null
+ },
+ {
+  "code": "51",
+  "title": "Personal Services Workers",
+  "level": "submajor",
+  "parent": "5"
+ },
+ {
+  "code": "511",
+  "title": "Travel Attendants, Conductors and Guides",
+  "level": "minor",
+  "parent": "51"
+ },
+ {
+  "code": "5111",
+  "title": "Travel Attendants and Travel Stewards",
+  "level": "unit",
+  "parent": "511"
+ },
+ {
+  "code": "5112",
+  "title": "Transport Conductors",
+  "level": "unit",
+  "parent": "511"
+ },
+ {
+  "code": "5113",
+  "title": "Travel Guides",
+  "level": "unit",
+  "parent": "511"
+ },
+ {
+  "code": "512",
+  "title": "Cooks",
+  "level": "minor",
+  "parent": "51"
+ },
+ {
+  "code": "5120",
+  "title": "Cooks",
+  "level": "unit",
+  "parent": "512"
+ },
+ {
+  "code": "513",
+  "title": "Waiters and Bartenders",
+  "level": "minor",
+  "parent": "51"
+ },
+ {
+  "code": "5131",
+  "title": "Waiters",
+  "level": "unit",
+  "parent": "513"
+ },
+ {
+  "code": "5132",
+  "title": "Bartenders",
+  "level": "unit",
+  "parent": "513"
+ },
+ {
+  "code": "514",
+  "title": "Hairdressers, Beauticians and Related Workers",
+  "level": "minor",
+  "parent": "51"
+ },
+ {
+  "code": "5141",
+  "title": "Hairdressers",
+  "level": "unit",
+  "parent": "514"
+ },
+ {
+  "code": "5142",
+  "title": "Beauticians and Related Workers",
+  "level": "unit",
+  "parent": "514"
+ },
+ {
+  "code": "515",
+  "title": "Building and Housekeeping Supervisors",
+  "level": "minor",
+  "parent": "51"
+ },
+ {
+  "code": "5151",
+  "title": "Cleaning and Housekeeping Supervisors in Offices, Hotels and Other Establishments",
+  "level": "unit",
+  "parent": "515"
+ },
+ {
+  "code": "5152",
+  "title": "Domestic Housekeepers",
+  "level": "unit",
+  "parent": "515"
+ },
+ {
+  "code": "5153",
+  "title": "Building Caretakers",
+  "level": "unit",
+  "parent": "515"
+ },
+ {
+  "code": "516",
+  "title": "Other Personal Services Workers",
+  "level": "minor",
+  "parent": "51"
+ },
+ {
+  "code": "5161",
+  "title": "Astrologers, Fortune-tellers and Related Workers",
+  "level": "unit",
+  "parent": "516"
+ },
+ {
+  "code": "5162",
+  "title": "Companions and Valets",
+  "level": "unit",
+  "parent": "516"
+ },
+ {
+  "code": "5163",
+  "title": "Undertakers and Embalmers",
+  "level": "unit",
+  "parent": "516"
+ },
+ {
+  "code": "5164",
+  "title": "Pet Groomers and Animal Care Workers",
+  "level": "unit",
+  "parent": "516"
+ },
+ {
+  "code": "5165",
+  "title": "Driving Instructors",
+  "level": "unit",
+  "parent": "516"
+ },
+ {
+  "code": "5169",
+  "title": "Personal Services Workers Not Elsewhere Classified",
+  "level": "unit",
+  "parent": "516"
+ },
+ {
+  "code": "52",
+  "title": "Sales Workers",
+  "level": "submajor",
+  "parent": "5"
+ },
+ {
+  "code": "521",
+  "title": "Street and Market Salespersons",
+  "level": "minor",
+  "parent": "52"
+ },
+ {
+  "code": "5211",
+  "title": "Stall and Market Salespersons",
+  "level": "unit",
+  "parent": "521"
+ },
+ {
+  "code": "5212",
+  "title": "Street Food Salespersons",
+  "level": "unit",
+  "parent": "521"
+ },
+ {
+  "code": "522",
+  "title": "Shop Salespersons",
+  "level": "minor",
+  "parent": "52"
+ },
+ {
+  "code": "5221",
+  "title": "Shopkeepers",
+  "level": "unit",
+  "parent": "522"
+ },
+ {
+  "code": "5222",
+  "title": "Shop Supervisors",
+  "level": "unit",
+  "parent": "522"
+ },
+ {
+  "code": "5223",
+  "title": "Shop Sales Assistants",
+  "level": "unit",
+  "parent": "522"
+ },
+ {
+  "code": "523",
+  "title": "Cashiers and Ticket Clerks",
+  "level": "minor",
+  "parent": "52"
+ },
+ {
+  "code": "5230",
+  "title": "Cashiers and Ticket Clerks",
+  "level": "unit",
+  "parent": "523"
+ },
+ {
+  "code": "524",
+  "title": "Other Sales Workers",
+  "level": "minor",
+  "parent": "52"
+ },
+ {
+  "code": "5241",
+  "title": "Fashion and Other Models",
+  "level": "unit",
+  "parent": "524"
+ },
+ {
+  "code": "5242",
+  "title": "Sales Demonstrators",
+  "level": "unit",
+  "parent": "524"
+ },
+ {
+  "code": "5243",
+  "title": "Door-to-door Salespersons",
+  "level": "unit",
+  "parent": "524"
+ },
+ {
+  "code": "5244",
+  "title": "Contact Centre Salespersons",
+  "level": "unit",
+  "parent": "524"
+ },
+ {
+  "code": "5245",
+  "title": "Service Station Attendants",
+  "level": "unit",
+  "parent": "524"
+ },
+ {
+  "code": "5246",
+  "title": "Food Service Counter Attendants",
+  "level": "unit",
+  "parent": "524"
+ },
+ {
+  "code": "5249",
+  "title": "Sales Workers Not Elsewhere Classified",
+  "level": "unit",
+  "parent": "524"
+ },
+ {
+  "code": "53",
+  "title": "Personal Care Workers",
+  "level": "submajor",
+  "parent": "5"
+ },
+ {
+  "code": "531",
+  "title": "Child Care Workers and Teachers’ Aides",
+  "level": "minor",
+  "parent": "53"
+ },
+ {
+  "code": "5311",
+  "title": "Child Care Workers",
+  "level": "unit",
+  "parent": "531"
+ },
+ {
+  "code": "5312",
+  "title": "Teachers’ Aides",
+  "level": "unit",
+  "parent": "531"
+ },
+ {
+  "code": "532",
+  "title": "Personal Care Workers in Health Services",
+  "level": "minor",
+  "parent": "53"
+ },
+ {
+  "code": "5321",
+  "title": "Health Care Assistants",
+  "level": "unit",
+  "parent": "532"
+ },
+ {
+  "code": "5322",
+  "title": "Home-based Personal Care Workers",
+  "level": "unit",
+  "parent": "532"
+ },
+ {
+  "code": "5329",
+  "title": "Personal Care Workers in Health Services Not Elsewhere Classified",
+  "level": "unit",
+  "parent": "532"
+ },
+ {
+  "code": "54",
+  "title": "Protective Services Workers",
+  "level": "submajor",
+  "parent": "5"
+ },
+ {
+  "code": "541",
+  "title": "Protective Services Workers",
+  "level": "minor",
+  "parent": "54"
+ },
+ {
+  "code": "5411",
+  "title": "Firefighters",
+  "level": "unit",
+  "parent": "541"
+ },
+ {
+  "code": "5412",
+  "title": "Police Officers",
+  "level": "unit",
+  "parent": "541"
+ },
+ {
+  "code": "5413",
+  "title": "Prison Guards",
+  "level": "unit",
+  "parent": "541"
+ },
+ {
+  "code": "5414",
+  "title": "Security Guards",
+  "level": "unit",
+  "parent": "541"
+ },
+ {
+  "code": "5419",
+  "title": "Protective Services Workers Not Elsewhere Classified",
+  "level": "unit",
+  "parent": "541"
+ },
+ {
+  "code": "6",
+  "title": "Skilled Agricultural, Forestry and Fishery Workers",
+  "level": "major",
+  "parent": null
+ },
+ {
+  "code": "61",
+  "title": "Market-oriented Skilled Agricultural Workers",
+  "level": "submajor",
+  "parent": "6"
+ },
+ {
+  "code": "611",
+  "title": "Market Gardeners and Crop Growers",
+  "level": "minor",
+  "parent": "61"
+ },
+ {
+  "code": "6111",
+  "title": "Field Crop and Vegetable Growers",
+  "level": "unit",
+  "parent": "611"
+ },
+ {
+  "code": "6112",
+  "title": "Tree and Shrub Crop Growers",
+  "level": "unit",
+  "parent": "611"
+ },
+ {
+  "code": "6113",
+  "title": "Gardeners, Horticultural and Nursery Growers",
+  "level": "unit",
+  "parent": "611"
+ },
+ {
+  "code": "6114",
+  "title": "Mixed Crop Growers",
+  "level": "unit",
+  "parent": "611"
+ },
+ {
+  "code": "612",
+  "title": "Animal Producers",
+  "level": "minor",
+  "parent": "61"
+ },
+ {
+  "code": "6121",
+  "title": "Livestock and Dairy Producers",
+  "level": "unit",
+  "parent": "612"
+ },
+ {
+  "code": "6122",
+  "title": "Poultry Producers",
+  "level": "unit",
+  "parent": "612"
+ },
+ {
+  "code": "6123",
+  "title": "Apiarists and Sericulturists",
+  "level": "unit",
+  "parent": "612"
+ },
+ {
+  "code": "6129",
+  "title": "Animal Producers Not Elsewhere Classified",
+  "level": "unit",
+  "parent": "612"
+ },
+ {
+  "code": "613",
+  "title": "Mixed Crop and Animal Producers",
+  "level": "minor",
+  "parent": "61"
+ },
+ {
+  "code": "6130",
+  "title": "Mixed Crop and Animal Producers",
+  "level": "unit",
+  "parent": "613"
+ },
+ {
+  "code": "62",
+  "title": "Market-oriented Skilled Forestry, Fishery and Hunting Workers",
+  "level": "submajor",
+  "parent": "6"
+ },
+ {
+  "code": "621",
+  "title": "Forestry and Related Workers",
+  "level": "minor",
+  "parent": "62"
+ },
+ {
+  "code": "6210",
+  "title": "Forestry and Related Workers",
+  "level": "unit",
+  "parent": "621"
+ },
+ {
+  "code": "622",
+  "title": "Fishery Workers, Hunters and Trappers",
+  "level": "minor",
+  "parent": "62"
+ },
+ {
+  "code": "6221",
+  "title": "Aquaculture Workers",
+  "level": "unit",
+  "parent": "622"
+ },
+ {
+  "code": "6222",
+  "title": "Inland and Coastal Waters Fishery Workers",
+  "level": "unit",
+  "parent": "622"
+ },
+ {
+  "code": "6223",
+  "title": "Deep-sea Fishery Workers",
+  "level": "unit",
+  "parent": "622"
+ },
+ {
+  "code": "6224",
+  "title": "Hunters and Trappers",
+  "level": "unit",
+  "parent": "622"
+ },
+ {
+  "code": "63",
+  "title": "Subsistence Farmers, Fishers, Hunters and Gatherers",
+  "level": "submajor",
+  "parent": "6"
+ },
+ {
+  "code": "631",
+  "title": "Subsistence Crop Farmers",
+  "level": "minor",
+  "parent": "63"
+ },
+ {
+  "code": "6310",
+  "title": "Subsistence Crop Farmers",
+  "level": "unit",
+  "parent": "631"
+ },
+ {
+  "code": "632",
+  "title": "Subsistence Livestock Farmers",
+  "level": "minor",
+  "parent": "63"
+ },
+ {
+  "code": "6320",
+  "title": "Subsistence Livestock Farmers",
+  "level": "unit",
+  "parent": "632"
+ },
+ {
+  "code": "633",
+  "title": "Subsistence Mixed Crop and Livestock Farmers",
+  "level": "minor",
+  "parent": "63"
+ },
+ {
+  "code": "6330",
+  "title": "Subsistence Mixed Crop and Livestock Farmers",
+  "level": "unit",
+  "parent": "633"
+ },
+ {
+  "code": "634",
+  "title": "Subsistence Fishers, Hunters, Trappers and Gatherers",
+  "level": "minor",
+  "parent": "63"
+ },
+ {
+  "code": "6340",
+  "title": "Subsistence Fishers, Hunters, Trappers and Gatherers",
+  "level": "unit",
+  "parent": "634"
+ },
+ {
+  "code": "7",
+  "title": "Craft and Related Trades Workers",
+  "level": "major",
+  "parent": null
+ },
+ {
+  "code": "71",
+  "title": "Building and Related Trades Workers (excluding Electricians)",
+  "level": "submajor",
+  "parent": "7"
+ },
+ {
+  "code": "711",
+  "title": "Building Frame and Related Trades Workers",
+  "level": "minor",
+  "parent": "71"
+ },
+ {
+  "code": "7111",
+  "title": "House Builders",
+  "level": "unit",
+  "parent": "711"
+ },
+ {
+  "code": "7112",
+  "title": "Bricklayers and Related Workers",
+  "level": "unit",
+  "parent": "711"
+ },
+ {
+  "code": "7113",
+  "title": "Stonemasons, Stone Cutters, Splitters and Carvers",
+  "level": "unit",
+  "parent": "711"
+ },
+ {
+  "code": "7114",
+  "title": "Concrete Placers, Concrete Finishers and Related Workers",
+  "level": "unit",
+  "parent": "711"
+ },
+ {
+  "code": "7115",
+  "title": "Carpenters and Joiners",
+  "level": "unit",
+  "parent": "711"
+ },
+ {
+  "code": "7119",
+  "title": "Building Frame and Related Trades Workers Not Elsewhere Classified",
+  "level": "unit",
+  "parent": "711"
+ },
+ {
+  "code": "712",
+  "title": "Building Finishers and Related Trades Workers",
+  "level": "minor",
+  "parent": "71"
+ },
+ {
+  "code": "7121",
+  "title": "Roofers",
+  "level": "unit",
+  "parent": "712"
+ },
+ {
+  "code": "7122",
+  "title": "Floor Layers and Tile Setters",
+  "level": "unit",
+  "parent": "712"
+ },
+ {
+  "code": "7123",
+  "title": "Plasterers",
+  "level": "unit",
+  "parent": "712"
+ },
+ {
+  "code": "7124",
+  "title": "Insulation Workers",
+  "level": "unit",
+  "parent": "712"
+ },
+ {
+  "code": "7125",
+  "title": "Glaziers",
+  "level": "unit",
+  "parent": "712"
+ },
+ {
+  "code": "7126",
+  "title": "Plumbers and Pipe Fitters",
+  "level": "unit",
+  "parent": "712"
+ },
+ {
+  "code": "7127",
+  "title": "Air Conditioning and Refrigeration Mechanics",
+  "level": "unit",
+  "parent": "712"
+ },
+ {
+  "code": "713",
+  "title": "Painters, Building Structure Cleaners and Related Trades Workers",
+  "level": "minor",
+  "parent": "71"
+ },
+ {
+  "code": "7131",
+  "title": "Painters and Related Workers",
+  "level": "unit",
+  "parent": "713"
+ },
+ {
+  "code": "7132",
+  "title": "Spray Painters and Varnishers",
+  "level": "unit",
+  "parent": "713"
+ },
+ {
+  "code": "7133",
+  "title": "Building Structure Cleaners",
+  "level": "unit",
+  "parent": "713"
+ },
+ {
+  "code": "72",
+  "title": "Metal, Machinery and Related Trades Workers",
+  "level": "submajor",
+  "parent": "7"
+ },
+ {
+  "code": "721",
+  "title": "Sheet and Structural Metal Workers, Moulders and Welders, and Related Workers",
+  "level": "minor",
+  "parent": "72"
+ },
+ {
+  "code": "7211",
+  "title": "Metal Moulders and Coremakers",
+  "level": "unit",
+  "parent": "721"
+ },
+ {
+  "code": "7212",
+  "title": "Welders and Flame Cutters",
+  "level": "unit",
+  "parent": "721"
+ },
+ {
+  "code": "7213",
+  "title": "Sheet Metal Workers",
+  "level": "unit",
+  "parent": "721"
+ },
+ {
+  "code": "7214",
+  "title": "Structural Metal Preparers and Erectors",
+  "level": "unit",
+  "parent": "721"
+ },
+ {
+  "code": "7215",
+  "title": "Riggers and Cable Splicers",
+  "level": "unit",
+  "parent": "721"
+ },
+ {
+  "code": "722",
+  "title": "Blacksmiths, Toolmakers and Related Trades Workers",
+  "level": "minor",
+  "parent": "72"
+ },
+ {
+  "code": "7221",
+  "title": "Blacksmiths, Hammersmiths and Forging Press Workers",
+  "level": "unit",
+  "parent": "722"
+ },
+ {
+  "code": "7222",
+  "title": "Toolmakers and Related Workers",
+  "level": "unit",
+  "parent": "722"
+ },
+ {
+  "code": "7223",
+  "title": "Metal Working Machine Tool Setters and Operators",
+  "level": "unit",
+  "parent": "722"
+ },
+ {
+  "code": "7224",
+  "title": "Metal Polishers, Wheel Grinders and Tool Sharpeners",
+  "level": "unit",
+  "parent": "722"
+ },
+ {
+  "code": "723",
+  "title": "Machinery Mechanics and Repairers",
+  "level": "minor",
+  "parent": "72"
+ },
+ {
+  "code": "7231",
+  "title": "Motor Vehicle Mechanics and Repairers",
+  "level": "unit",
+  "parent": "723"
+ },
+ {
+  "code": "7232",
+  "title": "Aircraft Engine Mechanics and Repairers",
+  "level": "unit",
+  "parent": "723"
+ },
+ {
+  "code": "7233",
+  "title": "Agricultural and Industrial Machinery Mechanics and Repairers",
+  "level": "unit",
+  "parent": "723"
+ },
+ {
+  "code": "7234",
+  "title": "Bicycle and Related Repairers",
+  "level": "unit",
+  "parent": "723"
+ },
+ {
+  "code": "73",
+  "title": "Handicraft and Printing Workers",
+  "level": "submajor",
+  "parent": "7"
+ },
+ {
+  "code": "731",
+  "title": "Handicraft Workers",
+  "level": "minor",
+  "parent": "73"
+ },
+ {
+  "code": "7311",
+  "title": "Precision-instrument Makers and Repairers",
+  "level": "unit",
+  "parent": "731"
+ },
+ {
+  "code": "7312",
+  "title": "Musical Instrument Makers and Tuners",
+  "level": "unit",
+  "parent": "731"
+ },
+ {
+  "code": "7313",
+  "title": "Jewellery and Precious Metal Workers",
+  "level": "unit",
+  "parent": "731"
+ },
+ {
+  "code": "7314",
+  "title": "Potters and Related Workers",
+  "level": "unit",
+  "parent": "731"
+ },
+ {
+  "code": "7315",
+  "title": "Glass Makers, Cutters, Grinders and Finishers",
+  "level": "unit",
+  "parent": "731"
+ },
+ {
+  "code": "7316",
+  "title": "Signwriters, Decorative Painters, Engravers and Etchers",
+  "level": "unit",
+  "parent": "731"
+ },
+ {
+  "code": "7317",
+  "title": "Handicraft Workers in Wood, Basketry and Related Materials",
+  "level": "unit",
+  "parent": "731"
+ },
+ {
+  "code": "7318",
+  "title": "Handicraft Workers in Textile, Leather and Related Materials",
+  "level": "unit",
+  "parent": "731"
+ },
+ {
+  "code": "7319",
+  "title": "Handicraft Workers Not Elsewhere Classified",
+  "level": "unit",
+  "parent": "731"
+ },
+ {
+  "code": "732",
+  "title": "Printing Trades Workers",
+  "level": "minor",
+  "parent": "73"
+ },
+ {
+  "code": "7321",
+  "title": "Pre-press Technicians",
+  "level": "unit",
+  "parent": "732"
+ },
+ {
+  "code": "7322",
+  "title": "Printers",
+  "level": "unit",
+  "parent": "732"
+ },
+ {
+  "code": "7323",
+  "title": "Print Finishing and Binding Workers",
+  "level": "unit",
+  "parent": "732"
+ },
+ {
+  "code": "74",
+  "title": "Electrical and Electronics Trades Workers",
+  "level": "submajor",
+  "parent": "7"
+ },
+ {
+  "code": "741",
+  "title": "Electrical Equipment Installers and Repairers",
+  "level": "minor",
+  "parent": "74"
+ },
+ {
+  "code": "7411",
+  "title": "Building and Related Electricians",
+  "level": "unit",
+  "parent": "741"
+ },
+ {
+  "code": "7412",
+  "title": "Electrical Mechanics and Fitters",
+  "level": "unit",
+  "parent": "741"
+ },
+ {
+  "code": "7413",
+  "title": "Electrical Line Installers and Repairers",
+  "level": "unit",
+  "parent": "741"
+ },
+ {
+  "code": "742",
+  "title": "Electronics and Telecommunications Installers and Repairers",
+  "level": "minor",
+  "parent": "74"
+ },
+ {
+  "code": "7421",
+  "title": "Electronics Mechanics and Servicers",
+  "level": "unit",
+  "parent": "742"
+ },
+ {
+  "code": "7422",
+  "title": "Information and Communications Technology Installers and Servicers",
+  "level": "unit",
+  "parent": "742"
+ },
+ {
+  "code": "75",
+  "title": "Food Processing, Woodworking, Garment and Other Craft and Related Trades Workers",
+  "level": "submajor",
+  "parent": "7"
+ },
+ {
+  "code": "751",
+  "title": "Food Processing and Related Trades Workers",
+  "level": "minor",
+  "parent": "75"
+ },
+ {
+  "code": "7511",
+  "title": "Butchers, Fishmongers and Related Food Preparers",
+  "level": "unit",
+  "parent": "751"
+ },
+ {
+  "code": "7512",
+  "title": "Bakers, Pastry-cooks and Confectionery Makers",
+  "level": "unit",
+  "parent": "751"
+ },
+ {
+  "code": "7513",
+  "title": "Dairy Products Makers",
+  "level": "unit",
+  "parent": "751"
+ },
+ {
+  "code": "7514",
+  "title": "Fruit, Vegetable and Related Preservers",
+  "level": "unit",
+  "parent": "751"
+ },
+ {
+  "code": "7515",
+  "title": "Food and Beverage Tasters and Graders",
+  "level": "unit",
+  "parent": "751"
+ },
+ {
+  "code": "7516",
+  "title": "Tobacco Preparers and Tobacco Products Makers",
+  "level": "unit",
+  "parent": "751"
+ },
+ {
+  "code": "752",
+  "title": "Wood Treaters, Cabinet-makers and Related Trades Workers",
+  "level": "minor",
+  "parent": "75"
+ },
+ {
+  "code": "7521",
+  "title": "Wood Treaters",
+  "level": "unit",
+  "parent": "752"
+ },
+ {
+  "code": "7522",
+  "title": "Cabinet-makers and Related Workers",
+  "level": "unit",
+  "parent": "752"
+ },
+ {
+  "code": "7523",
+  "title": "Woodworking Machine Tool Setters and Operators",
+  "level": "unit",
+  "parent": "752"
+ },
+ {
+  "code": "753",
+  "title": "Garment and Related Trades Workers",
+  "level": "minor",
+  "parent": "75"
+ },
+ {
+  "code": "7531",
+  "title": "Tailors, Dressmakers, Furriers and Hatters",
+  "level": "unit",
+  "parent": "753"
+ },
+ {
+  "code": "7532",
+  "title": "Garment and Related Patternmakers and Cutters",
+  "level": "unit",
+  "parent": "753"
+ },
+ {
+  "code": "7533",
+  "title": "Sewing, Embroidery and Related Workers",
+  "level": "unit",
+  "parent": "753"
+ },
+ {
+  "code": "7534",
+  "title": "Upholsterers and Related Workers",
+  "level": "unit",
+  "parent": "753"
+ },
+ {
+  "code": "7535",
+  "title": "Pelt Dressers, Tanners and Fellmongers",
+  "level": "unit",
+  "parent": "753"
+ },
+ {
+  "code": "7536",
+  "title": "Shoemakers and Related Workers",
+  "level": "unit",
+  "parent": "753"
+ },
+ {
+  "code": "754",
+  "title": "Other Craft and Related Workers",
+  "level": "minor",
+  "parent": "75"
+ },
+ {
+  "code": "7541",
+  "title": "Underwater Divers",
+  "level": "unit",
+  "parent": "754"
+ },
+ {
+  "code": "7542",
+  "title": "Shotfirers and Blasters",
+  "level": "unit",
+  "parent": "754"
+ },
+ {
+  "code": "7543",
+  "title": "Product Graders and Testers (excluding Foods and Beverages)",
+  "level": "unit",
+  "parent": "754"
+ },
+ {
+  "code": "7544",
+  "title": "Fumigators and Other Pest and Weed Controllers",
+  "level": "unit",
+  "parent": "754"
+ },
+ {
+  "code": "7549",
+  "title": "Craft and Related Workers Not Elsewhere Classified",
+  "level": "unit",
+  "parent": "754"
+ },
+ {
+  "code": "8",
+  "title": "Plant and Machine Operators and Assemblers",
+  "level": "major",
+  "parent": null
+ },
+ {
+  "code": "81",
+  "title": "Stationary Plant and Machine Operators",
+  "level": "submajor",
+  "parent": "8"
+ },
+ {
+  "code": "811",
+  "title": "Mining and Mineral Processing Plant Operators",
+  "level": "minor",
+  "parent": "81"
+ },
+ {
+  "code": "8111",
+  "title": "Miners and Quarriers",
+  "level": "unit",
+  "parent": "811"
+ },
+ {
+  "code": "8112",
+  "title": "Mineral and Stone Processing Plant Operators",
+  "level": "unit",
+  "parent": "811"
+ },
+ {
+  "code": "8113",
+  "title": "Well Drillers and Borers and Related Workers",
+  "level": "unit",
+  "parent": "811"
+ },
+ {
+  "code": "8114",
+  "title": "Cement, Stone and Other Mineral Products Machine Operators",
+  "level": "unit",
+  "parent": "811"
+ },
+ {
+  "code": "812",
+  "title": "Metal Processing and Finishing Plant Operators",
+  "level": "minor",
+  "parent": "81"
+ },
+ {
+  "code": "8121",
+  "title": "Metal Processing Plant Operators",
+  "level": "unit",
+  "parent": "812"
+ },
+ {
+  "code": "8122",
+  "title": "Metal Finishing, Plating and Coating Machine Operators",
+  "level": "unit",
+  "parent": "812"
+ },
+ {
+  "code": "813",
+  "title": "Chemical and Photographic Products Plant and Machine Operators",
+  "level": "minor",
+  "parent": "81"
+ },
+ {
+  "code": "8131",
+  "title": "Chemical Products Plant and Machine Operators",
+  "level": "unit",
+  "parent": "813"
+ },
+ {
+  "code": "8132",
+  "title": "Photographic Products Machine Operators",
+  "level": "unit",
+  "parent": "813"
+ },
+ {
+  "code": "814",
+  "title": "Rubber, Plastic and Paper Products Machine Operators",
+  "level": "minor",
+  "parent": "81"
+ },
+ {
+  "code": "8141",
+  "title": "Rubber Products Machine Operators",
+  "level": "unit",
+  "parent": "814"
+ },
+ {
+  "code": "8142",
+  "title": "Plastic Products Machine Operators",
+  "level": "unit",
+  "parent": "814"
+ },
+ {
+  "code": "8143",
+  "title": "Paper Products Machine Operators",
+  "level": "unit",
+  "parent": "814"
+ },
+ {
+  "code": "815",
+  "title": "Textile, Fur and Leather Products Machine Operators",
+  "level": "minor",
+  "parent": "81"
+ },
+ {
+  "code": "8151",
+  "title": "Fibre Preparing, Spinning and Winding Machine Operators",
+  "level": "unit",
+  "parent": "815"
+ },
+ {
+  "code": "8152",
+  "title": "Weaving and Knitting Machine Operators",
+  "level": "unit",
+  "parent": "815"
+ },
+ {
+  "code": "8153",
+  "title": "Sewing Machine Operators",
+  "level": "unit",
+  "parent": "815"
+ },
+ {
+  "code": "8154",
+  "title": "Bleaching, Dyeing and Fabric Cleaning Machine Operators",
+  "level": "unit",
+  "parent": "815"
+ },
+ {
+  "code": "8155",
+  "title": "Fur and Leather Preparing Machine Operators",
+  "level": "unit",
+  "parent": "815"
+ },
+ {
+  "code": "8156",
+  "title": "Shoemaking and Related Machine Operators",
+  "level": "unit",
+  "parent": "815"
+ },
+ {
+  "code": "8157",
+  "title": "Laundry Machine Operators",
+  "level": "unit",
+  "parent": "815"
+ },
+ {
+  "code": "8159",
+  "title": "Textile, Fur and Leather Products Machine Operators Not Elsewhere Classified",
+  "level": "unit",
+  "parent": "815"
+ },
+ {
+  "code": "816",
+  "title": "Food and Related Products Machine Operators",
+  "level": "minor",
+  "parent": "81"
+ },
+ {
+  "code": "8160",
+  "title": "Food and Related Products Machine Operators",
+  "level": "unit",
+  "parent": "816"
+ },
+ {
+  "code": "817",
+  "title": "Wood Processing and Papermaking Plant Operators",
+  "level": "minor",
+  "parent": "81"
+ },
+ {
+  "code": "8171",
+  "title": "Pulp and Papermaking Plant Operators",
+  "level": "unit",
+  "parent": "817"
+ },
+ {
+  "code": "8172",
+  "title": "Wood Processing Plant Operators",
+  "level": "unit",
+  "parent": "817"
+ },
+ {
+  "code": "818",
+  "title": "Other Stationary Plant and Machine Operators",
+  "level": "minor",
+  "parent": "81"
+ },
+ {
+  "code": "8181",
+  "title": "Glass and Ceramics Plant Operators",
+  "level": "unit",
+  "parent": "818"
+ },
+ {
+  "code": "8182",
+  "title": "Steam Engine and Boiler Operators",
+  "level": "unit",
+  "parent": "818"
+ },
+ {
+  "code": "8183",
+  "title": "Packing, Bottling and Labelling Machine Operators",
+  "level": "unit",
+  "parent": "818"
+ },
+ {
+  "code": "8189",
+  "title": "Stationary Plant and Machine Operators Not Elsewhere Classified",
+  "level": "unit",
+  "parent": "818"
+ },
+ {
+  "code": "82",
+  "title": "Assemblers",
+  "level": "submajor",
+  "parent": "8"
+ },
+ {
+  "code": "821",
+  "title": "Assemblers",
+  "level": "minor",
+  "parent": "82"
+ },
+ {
+  "code": "8211",
+  "title": "Mechanical Machinery Assemblers",
+  "level": "unit",
+  "parent": "821"
+ },
+ {
+  "code": "8212",
+  "title": "Electrical and Electronic Equipment Assemblers",
+  "level": "unit",
+  "parent": "821"
+ },
+ {
+  "code": "8219",
+  "title": "Assemblers Not Elsewhere Classified",
+  "level": "unit",
+  "parent": "821"
+ },
+ {
+  "code": "83",
+  "title": "Drivers and Mobile Plant Operators",
+  "level": "submajor",
+  "parent": "8"
+ },
+ {
+  "code": "831",
+  "title": "Locomotive Engine Drivers and Related Workers",
+  "level": "minor",
+  "parent": "83"
+ },
+ {
+  "code": "8311",
+  "title": "Locomotive Engine Drivers",
+  "level": "unit",
+  "parent": "831"
+ },
+ {
+  "code": "8312",
+  "title": "Railway Brake, Signal and Switch Operators",
+  "level": "unit",
+  "parent": "831"
+ },
+ {
+  "code": "832",
+  "title": "Car, Van and Motorcycle Drivers",
+  "level": "minor",
+  "parent": "83"
+ },
+ {
+  "code": "8321",
+  "title": "Motorcycle Drivers",
+  "level": "unit",
+  "parent": "832"
+ },
+ {
+  "code": "8322",
+  "title": "Car, Taxi and Van Drivers",
+  "level": "unit",
+  "parent": "832"
+ },
+ {
+  "code": "833",
+  "title": "Heavy Truck and Bus Drivers",
+  "level": "minor",
+  "parent": "83"
+ },
+ {
+  "code": "8331",
+  "title": "Bus and Tram Drivers",
+  "level": "unit",
+  "parent": "833"
+ },
+ {
+  "code": "8332",
+  "title": "Heavy Truck and Lorry Drivers",
+  "level": "unit",
+  "parent": "833"
+ },
+ {
+  "code": "834",
+  "title": "Mobile Plant Operators",
+  "level": "minor",
+  "parent": "83"
+ },
+ {
+  "code": "8341",
+  "title": "Mobile Farm and Forestry Plant Operators",
+  "level": "unit",
+  "parent": "834"
+ },
+ {
+  "code": "8342",
+  "title": "Earthmoving and Related Plant Operators",
+  "level": "unit",
+  "parent": "834"
+ },
+ {
+  "code": "8343",
+  "title": "Crane, Hoist and Related Plant Operators",
+  "level": "unit",
+  "parent": "834"
+ },
+ {
+  "code": "8344",
+  "title": "Lifting Truck Operators",
+  "level": "unit",
+  "parent": "834"
+ },
+ {
+  "code": "835",
+  "title": "Ships’ Deck Crews and Related Workers",
+  "level": "minor",
+  "parent": "83"
+ },
+ {
+  "code": "8350",
+  "title": "Ships’ Deck Crews and Related Workers",
+  "level": "unit",
+  "parent": "835"
+ },
+ {
+  "code": "9",
+  "title": "Elementary Occupations",
+  "level": "major",
+  "parent": null
+ },
+ {
+  "code": "91",
+  "title": "Cleaners and Helpers",
+  "level": "submajor",
+  "parent": "9"
+ },
+ {
+  "code": "911",
+  "title": "Domestic, Hotel and Office Cleaners and Helpers",
+  "level": "minor",
+  "parent": "91"
+ },
+ {
+  "code": "9111",
+  "title": "Domestic Cleaners and Helpers",
+  "level": "unit",
+  "parent": "911"
+ },
+ {
+  "code": "9112",
+  "title": "Cleaners and Helpers in Offices, Hotels and Other Establishments",
+  "level": "unit",
+  "parent": "911"
+ },
+ {
+  "code": "912",
+  "title": "Vehicle, Window, Laundry and Other Hand Cleaning Workers",
+  "level": "minor",
+  "parent": "91"
+ },
+ {
+  "code": "9121",
+  "title": "Hand Launderers and Pressers",
+  "level": "unit",
+  "parent": "912"
+ },
+ {
+  "code": "9122",
+  "title": "Vehicle Cleaners",
+  "level": "unit",
+  "parent": "912"
+ },
+ {
+  "code": "9123",
+  "title": "Window Cleaners",
+  "level": "unit",
+  "parent": "912"
+ },
+ {
+  "code": "9129",
+  "title": "Other Cleaning Workers",
+  "level": "unit",
+  "parent": "912"
+ },
+ {
+  "code": "92",
+  "title": "Agricultural, Forestry and Fishery Labourers",
+  "level": "submajor",
+  "parent": "9"
+ },
+ {
+  "code": "921",
+  "title": "Agricultural, Forestry and Fishery Labourers",
+  "level": "minor",
+  "parent": "92"
+ },
+ {
+  "code": "9211",
+  "title": "Crop Farm Labourers",
+  "level": "unit",
+  "parent": "921"
+ },
+ {
+  "code": "9212",
+  "title": "Livestock Farm Labourers",
+  "level": "unit",
+  "parent": "921"
+ },
+ {
+  "code": "9213",
+  "title": "Mixed Crop and Livestock Farm Labourers",
+  "level": "unit",
+  "parent": "921"
+ },
+ {
+  "code": "9214",
+  "title": "Garden and Horticultural Labourers",
+  "level": "unit",
+  "parent": "921"
+ },
+ {
+  "code": "9215",
+  "title": "Forestry Labourers",
+  "level": "unit",
+  "parent": "921"
+ },
+ {
+  "code": "9216",
+  "title": "Fishery and Aquaculture Labourers",
+  "level": "unit",
+  "parent": "921"
+ },
+ {
+  "code": "93",
+  "title": "Labourers in Mining, Construction, Manufacturing and Transport",
+  "level": "submajor",
+  "parent": "9"
+ },
+ {
+  "code": "931",
+  "title": "Mining and Construction Labourers",
+  "level": "minor",
+  "parent": "93"
+ },
+ {
+  "code": "9311",
+  "title": "Mining and Quarrying Labourers",
+  "level": "unit",
+  "parent": "931"
+ },
+ {
+  "code": "9312",
+  "title": "Civil Engineering Labourers",
+  "level": "unit",
+  "parent": "931"
+ },
+ {
+  "code": "9313",
+  "title": "Building Construction Labourers",
+  "level": "unit",
+  "parent": "931"
+ },
+ {
+  "code": "932",
+  "title": "Manufacturing Labourers",
+  "level": "minor",
+  "parent": "93"
+ },
+ {
+  "code": "9321",
+  "title": "Hand Packers",
+  "level": "unit",
+  "parent": "932"
+ },
+ {
+  "code": "9329",
+  "title": "Manufacturing Labourers Not Elsewhere Classified",
+  "level": "unit",
+  "parent": "932"
+ },
+ {
+  "code": "933",
+  "title": "Transport and Storage Labourers",
+  "level": "minor",
+  "parent": "93"
+ },
+ {
+  "code": "9331",
+  "title": "Hand and Pedal Vehicle Drivers",
+  "level": "unit",
+  "parent": "933"
+ },
+ {
+  "code": "9332",
+  "title": "Drivers of Animal-drawn Vehicles and Machinery",
+  "level": "unit",
+  "parent": "933"
+ },
+ {
+  "code": "9333",
+  "title": "Freight Handlers",
+  "level": "unit",
+  "parent": "933"
+ },
+ {
+  "code": "9334",
+  "title": "Shelf Fillers",
+  "level": "unit",
+  "parent": "933"
+ },
+ {
+  "code": "94",
+  "title": "Food Preparation Assistants",
+  "level": "submajor",
+  "parent": "9"
+ },
+ {
+  "code": "941",
+  "title": "Food Preparation Assistants",
+  "level": "minor",
+  "parent": "94"
+ },
+ {
+  "code": "9411",
+  "title": "Fast Food Preparers",
+  "level": "unit",
+  "parent": "941"
+ },
+ {
+  "code": "9412",
+  "title": "Kitchen Helpers",
+  "level": "unit",
+  "parent": "941"
+ },
+ {
+  "code": "95",
+  "title": "Street and Related Sales and Services Workers",
+  "level": "submajor",
+  "parent": "9"
+ },
+ {
+  "code": "951",
+  "title": "Street and Related Services Workers",
+  "level": "minor",
+  "parent": "95"
+ },
+ {
+  "code": "9510",
+  "title": "Street and Related Services Workers",
+  "level": "unit",
+  "parent": "951"
+ },
+ {
+  "code": "952",
+  "title": "Street Vendors (excluding Food)",
+  "level": "minor",
+  "parent": "95"
+ },
+ {
+  "code": "9520",
+  "title": "Street Vendors (excluding Food)",
+  "level": "unit",
+  "parent": "952"
+ },
+ {
+  "code": "96",
+  "title": "Refuse Workers and Other Elementary Workers",
+  "level": "submajor",
+  "parent": "9"
+ },
+ {
+  "code": "961",
+  "title": "Refuse Workers",
+  "level": "minor",
+  "parent": "96"
+ },
+ {
+  "code": "9611",
+  "title": "Garbage and Recycling Collectors",
+  "level": "unit",
+  "parent": "961"
+ },
+ {
+  "code": "9612",
+  "title": "Refuse Sorters",
+  "level": "unit",
+  "parent": "961"
+ },
+ {
+  "code": "9613",
+  "title": "Sweepers and Related Labourers",
+  "level": "unit",
+  "parent": "961"
+ },
+ {
+  "code": "962",
+  "title": "Other Elementary Workers",
+  "level": "minor",
+  "parent": "96"
+ },
+ {
+  "code": "9621",
+  "title": "Messengers, Package Deliverers and Luggage Porters",
+  "level": "unit",
+  "parent": "962"
+ },
+ {
+  "code": "9622",
+  "title": "Odd-job Persons",
+  "level": "unit",
+  "parent": "962"
+ },
+ {
+  "code": "9623",
+  "title": "Meter Readers and Vending-machine Collectors",
+  "level": "unit",
+  "parent": "962"
+ },
+ {
+  "code": "9624",
+  "title": "Water and Firewood Collectors",
+  "level": "unit",
+  "parent": "962"
+ },
+ {
+  "code": "9629",
+  "title": "Elementary Workers Not Elsewhere Classified",
+  "level": "unit",
+  "parent": "962"
+ },
+ {
+  "code": "0",
+  "title": "Armed Forces Occupations",
+  "level": "major",
+  "parent": null
+ },
+ {
+  "code": "01",
+  "title": "Commissioned Armed Forces Officers",
+  "level": "submajor",
+  "parent": "0"
+ },
+ {
+  "code": "011",
+  "title": "Commissioned Armed Forces Officers",
+  "level": "minor",
+  "parent": "01"
+ },
+ {
+  "code": "0110",
+  "title": "Commissioned Armed Forces Officers",
+  "level": "unit",
+  "parent": "011"
+ },
+ {
+  "code": "02",
+  "title": "Non-commissioned Armed Forces Officers",
+  "level": "submajor",
+  "parent": "0"
+ },
+ {
+  "code": "021",
+  "title": "Non-commissioned Armed Forces Officers",
+  "level": "minor",
+  "parent": "02"
+ },
+ {
+  "code": "0210",
+  "title": "Non-commissioned Armed Forces Officers",
+  "level": "unit",
+  "parent": "021"
+ },
+ {
+  "code": "03",
+  "title": "Armed Forces Occupations, Other Ranks",
+  "level": "submajor",
+  "parent": "0"
+ },
+ {
+  "code": "031",
+  "title": "Armed Forces Occupations, Other Ranks",
+  "level": "minor",
+  "parent": "03"
+ },
+ {
+  "code": "0310",
+  "title": "Armed Forces Occupations, Other Ranks",
+  "level": "unit",
+  "parent": "031"
+ }
+]

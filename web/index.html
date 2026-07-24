@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anime Professions Explorer</title>
+<style>
+  :root{
+    color-scheme: light;
+    --plane:#f9f9f7; --surface:#fcfcfb; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781;
+    --grid:#e1e0d9; --axis:#c3c2b7; --border:rgba(11,11,11,.10);
+    --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; --s4:#eda100; --s5:#e87ba4; --s6:#008300; --s7:#4a3aa7; --s8:#e34948;
+    --seqA:#86b6ef; --seqB:#5598e7; --seqC:#2a78d6; --seqD:#1c5cab;
+    --good:#0ca30c; --crit:#d03b3b; --warn:#fab219;
+  }
+  @media (prefers-color-scheme: dark){ :root:where(:not([data-theme="light"])){
+    color-scheme:dark;
+    --plane:#0d0d0d; --surface:#1a1a19; --ink:#fff; --ink2:#c3c2b7; --muted:#898781;
+    --grid:#2c2c2a; --axis:#383835; --border:rgba(255,255,255,.10);
+    --s1:#3987e5; --s2:#d95926; --s3:#199e70; --s4:#c98500; --s5:#d55181; --s6:#008300; --s7:#9085e9; --s8:#e66767;
+    --seqA:#184f95; --seqB:#256abf; --seqC:#2a78d6; --seqD:#3987e5;
+    --good:#0ca30c; --crit:#d03b3b; --warn:#fab219;
+  }}
+  :root[data-theme="dark"]{
+    color-scheme:dark;
+    --plane:#0d0d0d; --surface:#1a1a19; --ink:#fff; --ink2:#c3c2b7; --muted:#898781;
+    --grid:#2c2c2a; --axis:#383835; --border:rgba(255,255,255,.10);
+    --s1:#3987e5; --s2:#d95926; --s3:#199e70; --s4:#c98500; --s5:#d55181; --s6:#008300; --s7:#9085e9; --s8:#e66767;
+    --seqA:#184f95; --seqB:#256abf; --seqC:#2a78d6; --seqD:#3987e5;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--plane);color:var(--ink);
+    font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:15px;line-height:1.45}
+  a{color:var(--s1);text-decoration:none} a:hover{text-decoration:underline}
+  header{padding:16px 22px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+  header h1{font-size:19px;margin:0;font-weight:650}
+  header .sub{color:var(--ink2);font-size:13px}
+  .spacer{flex:1}
+  .tabs{display:flex;gap:4px;padding:0 22px;border-bottom:1px solid var(--border);flex-wrap:wrap}
+  .tab{padding:10px 14px;cursor:pointer;color:var(--ink2);border-bottom:2px solid transparent;font-weight:550}
+  .tab.on{color:var(--ink);border-bottom-color:var(--s1)}
+  main{padding:22px;max-width:1120px;margin:0 auto}
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:18px;margin-bottom:18px}
+  .card h2{font-size:15px;margin:0 0 4px;font-weight:650}
+  .card .cap{color:var(--ink2);font-size:13px;margin:0 0 14px}
+  .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+  .tile{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px 16px}
+  .tile .n{font-size:26px;font-weight:700;letter-spacing:-.5px}
+  .tile .l{color:var(--ink2);font-size:12.5px;margin-top:2px}
+  input[type=search],input[type=text]{width:100%;padding:11px 13px;border:1px solid var(--border);
+    border-radius:10px;background:var(--surface);color:var(--ink);font-size:15px}
+  select{padding:9px;border:1px solid var(--border);border-radius:9px;background:var(--surface);color:var(--ink)}
+  .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+  .bars{display:flex;flex-direction:column;gap:7px}
+  .bar{display:grid;grid-template-columns:190px 1fr auto;gap:10px;align-items:center;cursor:default}
+  .bar .lab{color:var(--ink2);font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .bar.click{cursor:pointer} .bar.click:hover .lab{color:var(--ink)}
+  .track{height:16px;background:var(--grid);border-radius:4px;overflow:hidden}
+  .fill{height:100%;border-radius:4px}
+  .bar .val{font-variant-numeric:tabular-nums;color:var(--ink);font-size:13px;min-width:64px;text-align:right}
+  table{width:100%;border-collapse:collapse;font-size:13.5px}
+  th,td{text-align:left;padding:7px 8px;border-bottom:1px solid var(--border)}
+  th{color:var(--muted);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.03em}
+  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+  .badge{display:inline-block;padding:1px 8px;border-radius:999px;font-size:11.5px;font-weight:600}
+  .b-good{background:color-mix(in srgb,var(--good) 18%,transparent);color:var(--good)}
+  .b-crit{background:color-mix(in srgb,var(--crit) 18%,transparent);color:var(--crit)}
+  .b-mut{background:color-mix(in srgb,var(--muted) 20%,transparent);color:var(--ink2)}
+  .b-fan{background:color-mix(in srgb,var(--s7) 20%,transparent);color:var(--s7)}
+  .chip{padding:2px 9px;border:1px solid var(--border);border-radius:999px;font-size:12px;color:var(--ink2)}
+  .list-item{padding:9px 11px;border:1px solid var(--border);border-radius:9px;margin-bottom:7px;cursor:pointer;display:flex;gap:10px;align-items:center}
+  .list-item:hover{border-color:var(--s1)}
+  .muted{color:var(--ink2)} .small{font-size:12.5px}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media(max-width:760px){.two{grid-template-columns:1fr}.bar{grid-template-columns:130px 1fr auto}}
+  .toggle{cursor:pointer;border:1px solid var(--border);background:var(--surface);color:var(--ink);border-radius:9px;padding:7px 11px}
+  svg text{fill:var(--muted);font-size:11px}
+  .legend{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:8px}
+  .legend span{display:flex;gap:6px;align-items:center;font-size:12.5px;color:var(--ink2)}
+  .swatch{width:11px;height:11px;border-radius:3px;display:inline-block}
+  .hidden{display:none}
+</style>
+</head>
+<body>
+<header>
+  <h1>🎬 Anime Professions Explorer</h1>
+  <span class="sub" id="hdrsub">loading…</span>
+  <span class="spacer"></span>
+  <button class="toggle" id="aboutBtn">ℹ︎ About</button>
+  <button class="toggle" id="themeBtn" title="toggle theme">◐ theme</button>
+</header>
+<div id="aboutModal" class="hidden" style="position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:50;display:flex;align-items:center;justify-content:center;padding:20px">
+  <div class="card" style="max-width:680px;max-height:85vh;overflow:auto;margin:0" onclick="event.stopPropagation()">
+    <div class="row" style="justify-content:space-between;align-items:baseline">
+      <h2 style="font-size:19px;margin:0">About this project</h2>
+      <button class="toggle" id="aboutClose">✕ close</button>
+    </div>
+    <p>A hobby project measuring which real-world professions actually appear in anime — across
+      <b>21,988 titles</b>, keyed to the UN/ILO's <b>ISCO-08</b> occupation classification. Fantasy
+      roles (ninja, mage, royalty…) are counted in a separate stratum, never mixed into the real totals.</p>
+    <p><b>How it works.</b> Professions are detected in text — plot summaries, character bios, and
+      ~128,000 Japanese subtitle files — with a high-recall keyword lexicon, then <i>every</i> candidate
+      mention is judged in context by an LLM (Claude Haiku) to strip out jokes, negations, and mix-ups
+      (a mecha “pilot” is not an airline pilot). A stronger model (Claude Opus) grades a sample to
+      estimate precision, so shaky counts get <i>flagged</i> rather than trusted.</p>
+    <p><b>Reading the numbers.</b> “Appears in N anime” means the job was <i>named</i> in the text. A
+      profession shown on screen but never labeled — a festival food stall, a hotel receptionist — won't
+      be counted, which is why the “never-named” list is <i>named</i>, not <i>shown</i>. Rows marked
+      <span class="badge b-crit">unreliable</span> are upper bounds.</p>
+    <p><b>Data &amp; ethics.</b> Metadata and titles via <a href="https://anilist.co" target="_blank" rel="noopener">AniList</a>;
+      occupations via <a href="https://isco.ilo.org/en/isco-08" target="_blank" rel="noopener">ISCO-08 (ILO)</a>.
+      Counts include mentions derived from community-provided Japanese subtitles, but <b>only counts and
+      locators are used — never the subtitle text</b>. Non-commercial fan project.</p>
+    <p style="margin-bottom:0"><a href="https://github.com/elmiram/anime-professions" target="_blank" rel="noopener"><b>View the source code &amp; full write-up on GitHub →</b></a></p>
+  </div>
+</div>
+<div class="tabs" id="tabs">
+  <div class="tab on" data-t="overview">Overview</div>
+  <div class="tab" data-t="prof">By profession</div>
+  <div class="tab" data-t="anime">By anime</div>
+  <div class="tab" data-t="trends">Trends</div>
+</div>
+<main id="view"></main>
+<footer style="max-width:1120px;margin:0 auto;padding:8px 22px 40px;color:var(--muted);font-size:12.5px;line-height:1.6">
+  Non-commercial fan project. Anime metadata &amp; titles via <a href="https://anilist.co" target="_blank" rel="noopener">AniList</a>;
+  occupations classified with <a href="https://isco.ilo.org/en/isco-08" target="_blank" rel="noopener">ISCO-08</a> (ILO).
+  Counts include mentions derived from community-provided Japanese subtitles — <b>only counts and locators are shown, never subtitle text</b>.
+  Occupation counts are algorithm-assigned (LLM-adjudicated) and imperfect; rows flagged <i>unreliable</i> should be read as upper bounds.
+</footer>
+
+<script>
+const $ = (s,r=document)=>r.querySelector(s);
+const el = (t,c,h)=>{const e=document.createElement(t); if(c)e.className=c; if(h!=null)e.innerHTML=h; return e;};
+const j = u => (window.STATIC_FETCH ? window.STATIC_FETCH(u) : fetch(u).then(r=>r.json()));
+const fmt = n => (n==null?'–':n.toLocaleString());
+const pct = n => (n==null?'–':n.toFixed(2)+'%');
+const SERIES=['--s1','--s2','--s3','--s4','--s5','--s6','--s7','--s8'].map(v=>`var(${v})`);
+const cv = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+
+let SUMMARY=null;
+// ---- theme toggle ----
+$('#themeBtn').onclick=()=>{
+  const cur=document.documentElement.getAttribute('data-theme');
+  const dark=cur? cur==='dark' : matchMedia('(prefers-color-scheme:dark)').matches;
+  document.documentElement.setAttribute('data-theme', dark?'light':'dark');
+  if(activeTab==='trends') renderTrends();
+};
+// ---- about modal ----
+$('#aboutBtn').onclick=()=>$('#aboutModal').classList.remove('hidden');
+$('#aboutClose').onclick=()=>$('#aboutModal').classList.add('hidden');
+$('#aboutModal').onclick=()=>$('#aboutModal').classList.add('hidden');
+document.addEventListener('keydown',e=>{if(e.key==='Escape')$('#aboutModal').classList.add('hidden');});
+
+// ---- horizontal bars (single measure -> sequential blue) ----
+function bars(items, {label, value, max, color='var(--s1)', onClick, valFmt=fmt}){
+  const wrap=el('div','bars'); const mx=max||Math.max(...items.map(value),1);
+  items.forEach(it=>{
+    const b=el('div','bar'+(onClick?' click':''));
+    b.title = `${label(it)} — ${valFmt(value(it))}`;
+    const track=el('div','track'); const fill=el('div','fill');
+    fill.style.width=(100*value(it)/mx)+'%'; fill.style.background=color;
+    track.appendChild(fill);
+    b.append(el('div','lab',label(it)), track, el('div','val',valFmt(value(it))));
+    if(onClick) b.onclick=()=>onClick(it);
+    wrap.appendChild(b);
+  });
+  return wrap;
+}
+
+// ---- SVG multi-series line chart (change over time) ----
+function lineChart(decades, series, {mode='pct'}={}){
+  const isPct = mode==='pct';
+  const W=Math.max(520, decades.length*70), H=260, P={l:52,r:16,t:14,b:28};
+  const xs=decades, allY=series.flatMap(s=>s.points.map(p=>p[mode]||0));
+  const ymax=Math.max(...allY,1)*1.1;
+  const X=i=>P.l+(W-P.l-P.r)*(i/Math.max(xs.length-1,1));
+  const Y=v=>H-P.b-(H-P.t-P.b)*(v/ymax);
+  const NS='http://www.w3.org/2000/svg';
+  const svg=document.createElementNS(NS,'svg');
+  svg.setAttribute('viewBox',`0 0 ${W} ${H}`); svg.style.width='100%'; svg.style.height='auto';
+  const mk=(t,a)=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);return e;};
+  // gridlines + y ticks (precision scales to the range so tiny % stay readable)
+  const dp = !isPct?0 : (ymax<1?2 : ymax<5?1 : 0);
+  for(let g=0;g<=4;g++){const v=ymax*g/4,y=Y(v);
+    svg.append(mk('line',{x1:P.l,x2:W-P.r,y1:y,y2:y,stroke:cv('--grid'),'stroke-width':1}));
+    const tx=mk('text',{x:P.l-6,y:y+3,'text-anchor':'end'}); tx.textContent=v.toFixed(dp)+(isPct?'%':''); svg.append(tx);}
+  // x ticks
+  xs.forEach((d,i)=>{const tx=mk('text',{x:X(i),y:H-8,'text-anchor':'middle'});tx.textContent=d+'s';svg.append(tx);});
+  // series
+  series.forEach((s,si)=>{
+    const col=cv(SERIES[si%8].replace('var(','').replace(')',''));
+    const byDec=Object.fromEntries(s.points.map(p=>[p.decade,p[mode]]));
+    const pts=xs.map((d,i)=>[X(i),Y(byDec[d]||0)]);
+    const path=pts.map((p,i)=>(i?'L':'M')+p[0]+' '+p[1]).join(' ');
+    svg.append(mk('path',{d:path,fill:'none',stroke:col,'stroke-width':2,'stroke-linejoin':'round'}));
+    xs.forEach((d,i)=>{ if(byDec[d]!=null){
+      const c=mk('circle',{cx:X(i),cy:Y(byDec[d]),r:4,fill:col,stroke:cv('--surface'),'stroke-width':2});
+      const tt=document.createElementNS(NS,'title'); tt.textContent=`${s.title} · ${d}s · ${byDec[d]}${isPct?'%':''}`;
+      c.append(tt); svg.append(c);}});
+  });
+  return svg;
+}
+function legend(series){
+  const w=el('div','legend');
+  series.forEach((s,i)=>{const sp=el('span'); const sw=el('span','swatch');
+    sw.style.background=SERIES[i%8]; sp.append(sw, document.createTextNode(s.title)); w.append(sp);});
+  return w;
+}
+// Count <-> %-of-decade segmented toggle
+function modeToggle(cur,onChange){
+  const w=el('span'); w.style.display='inline-flex';
+  [['count','Count'],['pct','% of decade']].forEach(([m,lab],i)=>{
+    const b=el('button','toggle'); b.textContent=lab;
+    b.style.borderRadius = i===0?'9px 0 0 9px':'0 9px 9px 0';
+    if(i===1) b.style.borderLeft='none';
+    if(m===cur){b.style.background='var(--s1)';b.style.color='#fff';b.style.borderColor='var(--s1)';}
+    b.onclick=()=>onChange(m); w.append(b);
+  });
+  return w;
+}
+const TREND_CAP={pct:'Share of each decade’s anime (franchise-deduped) that name this — normalises for the medium growing.',
+  count:'Raw count of anime (franchise-deduped) per decade — rises partly because far more anime are made now.'};
+// Real <-> Fantasy segmented toggle for the leaderboard
+function stratumToggle(cur,onChange){
+  const w=el('span'); w.style.display='inline-flex';
+  [['real','Real professions'],['fantasy','Fantasy roles']].forEach(([m,lab],i)=>{
+    const b=el('button','toggle'); b.textContent=lab;
+    b.style.borderRadius=i===0?'9px 0 0 9px':'0 9px 9px 0'; if(i===1)b.style.borderLeft='none';
+    const acc=m==='fantasy'?'var(--s7)':'var(--s1)';
+    if(m===cur){b.style.background=acc;b.style.color='#fff';b.style.borderColor=acc;}
+    b.onclick=()=>onChange(m); w.append(b);
+  });
+  return w;
+}
+// "Most-named professions by decade" leaderboard (rank table). Reuses trendMode for display.
+async function drawLeaderboard(){
+  const host=document.querySelector('#tlb'); if(!host) return;
+  if(!lbCache[trendStratum]) lbCache[trendStratum]=await j(`/api/decade_top?stratum=${trendStratum}&n=6`);
+  const d=lbCache[trendStratum]; host.innerHTML='';
+  const head=el('div','row'); head.style.justifyContent='space-between'; head.style.alignItems='baseline';
+  head.append(el('h2',null,'Most-named professions by decade'),
+    stratumToggle(trendStratum,s=>{trendStratum=s;drawLeaderboard();}));
+  host.append(head, el('p','cap',`Top 6 each decade (franchise-deduped). Values follow the Count / % toggle above — the ranking is identical either way.`));
+  const decs=d.decades;
+  const tbl=el('table'); tbl.style.minWidth=(70+decs.length*150)+'px';
+  let head2='<thead><tr><th>#</th>'+decs.map(x=>`<th>${x}s</th>`).join('')+'</tr></thead>';
+  let body='';
+  for(let r=0;r<6;r++){
+    body+='<tr><td class="muted">'+(r+1)+'</td>';
+    decs.forEach(dec=>{const it=(d.by_decade[dec]||[])[r];
+      if(!it){body+='<td></td>';return;}
+      const val=trendMode==='count'?fmt(it.count):it.pct+'%';
+      body+=`<td><a style="cursor:pointer" onclick="openProf('${it.kind}','${it.key}')">${it.title}</a> <span class="small muted">${val}</span></td>`;});
+    body+='</tr>';
+  }
+  tbl.innerHTML=head2+'<tbody>'+body+'</tbody>';
+  const wrap=el('div'); wrap.style.overflowX='auto'; wrap.append(tbl); host.append(wrap);
+}
+// self-contained trend card with its own Count/% toggle (default = raw count)
+function trendBlock(decades, series, title, defaultMode='count'){
+  const card=el('div','card'); let mode=defaultMode;
+  const head=el('div','row'); head.style.justifyContent='space-between'; head.style.alignItems='baseline';
+  const togHost=el('span'); head.append(el('h2',null,title), togHost);
+  const cap=el('p','cap',''); const host=el('div'); host.style.overflowX='auto';
+  card.append(head,cap,host);
+  const redraw=()=>{ togHost.innerHTML=''; togHost.append(modeToggle(mode,m=>{mode=m;redraw();}));
+    cap.textContent=TREND_CAP[mode]; host.innerHTML=''; host.append(lineChart(decades,series,{mode})); };
+  redraw(); return card;
+}
+function relBadge(o){
+  if(o.stratum==='fantasy') return '<span class="badge b-fan">fantasy</span>';
+  if(o.reliable===true) return `<span class="badge b-good">reliable ${o.precision!=null?'· p='+o.precision:''}</span>`;
+  if(o.reliable===false) return `<span class="badge b-crit">unreliable · p=${o.precision}</span>`;
+  return '<span class="badge b-mut">not measured</span>';
+}
+
+// ================= TABS =================
+let activeTab='overview';
+$('#tabs').onclick=e=>{const t=e.target.closest('.tab'); if(!t)return;
+  [...document.querySelectorAll('.tab')].forEach(x=>x.classList.toggle('on',x===t));
+  activeTab=t.dataset.t; render();};
+
+function render(){({overview:renderOverview,prof:renderProf,anime:renderAnime,trends:renderTrends}[activeTab])();}
+
+// ---- Overview ----
+async function renderOverview(){
+  const v=$('#view'); v.innerHTML='';
+  const s=SUMMARY;
+  const tiles=el('div','tiles');
+  [['Anime analysed',fmt(s.anime)],['In denominator',fmt(s.denominator)],
+   ['With scannable text',fmt(s.scannable)],['Franchises',fmt(s.franchises)],
+   ['Characters',fmt(s.characters)],['Confirmed job mentions',fmt(s.confirmed_hits)],
+   ['Renderable ISCO jobs',fmt(s.renderable)],['Never named (of those)',fmt(s.zero_renderable)]]
+   .forEach(([l,n])=>{const t=el('div','tile');t.append(el('div','n',n),el('div','l',l));tiles.append(t);});
+  v.append(tiles);
+
+  const N=s.scannable;
+  const c1=el('div','card');
+  c1.append(el('h2',null,'Most-named real professions'),
+            el('p','cap',`Distinct franchises that name each job, of ${fmt(N)} titles with scannable text.`));
+  c1.append(bars(s.top_real,{label:o=>o.title,value:o=>o.count,color:'var(--s1)',
+    valFmt:c=>fmt(c)+'  ('+(100*c/N).toFixed(1)+'%)',onClick:o=>openProf(o.kind,o.key)}));
+  const c2=el('div','card');
+  c2.append(el('h2',null,'Fantasy stratum (kept separate)'),
+            el('p','cap','Iconic fictional roles — never mixed into the real-occupation totals.'));
+  c2.append(bars(s.top_fantasy,{label:o=>o.title,value:o=>o.count,color:'var(--s2)',
+    valFmt:c=>fmt(c),onClick:o=>openProf(o.kind,o.key)}));
+  const two=el('div','two'); two.append(c1,c2); v.append(two);
+
+  const cz=el('div','card');
+  cz.append(el('h2',null,`The headline: ${s.zero_list.length} jobs anime never names`),
+    el('p','cap','Renderable ISCO occupations with zero confirmed mentions — even across millions of dialogue lines. Note: our method detects <b>named</b> jobs; some of these are surely <i>shown</i> but never labeled.'));
+  const grid=el('div'); grid.style.display='grid';
+  grid.style.gridTemplateColumns='repeat(auto-fill,minmax(240px,1fr))'; grid.style.gap='6px';
+  s.zero_list.forEach(o=>grid.append(el('div','small muted',`${o.key} · ${o.title}`)));
+  cz.append(grid); v.append(cz);
+}
+
+// ---- By profession ----
+let profTimer;
+async function renderProf(){
+  const v=$('#view'); v.innerHTML='';
+  const bar=el('div','card');
+  bar.innerHTML=`<div class="row"><div style="flex:1;min-width:220px"><input type="search" id="pq" placeholder="Search a profession — e.g. dentist, insurance, pilot"></div>
+    <select id="pstrat"><option value="all">All strata</option><option value="real">Real only</option><option value="fantasy">Fantasy only</option></select></div>`;
+  v.append(bar);
+  const listCard=el('div','card'); listCard.id='plist'; v.append(listCard);
+  const detail=el('div'); detail.id='pdetail'; v.append(detail);
+  const load=async()=>{
+    const q=$('#pq').value, st=$('#pstrat').value;
+    const d=await j(`/api/occupations?q=${encodeURIComponent(q)}&stratum=${st}`);
+    const N=d.denominator;
+    listCard.innerHTML='';
+    listCard.append(el('h2',null,`${d.occupations.length} professions`),
+      el('p','cap','Click one to see the anime that name it, prominence, reliability, and its trend by decade.'));
+    const top=d.occupations.slice(0,60);
+    listCard.append(bars(top,{label:o=>o.title+(o.stratum==='fantasy'?' ✧':''),value:o=>o.count,
+      color:'var(--s1)',valFmt:c=>fmt(c)+'  ('+(100*c/N).toFixed(2)+'%)',onClick:o=>openProf(o.kind,o.key)}));
+    if(d.occupations.length>60) listCard.append(el('p','cap','Showing top 60 by count — refine the search to narrow.'));
+  };
+  $('#pq').oninput=()=>{clearTimeout(profTimer);profTimer=setTimeout(load,180);};
+  $('#pstrat').onchange=load;
+  await load();
+  if(pendingProf){openProf(...pendingProf);pendingProf=null;}
+}
+let pendingProf=null;
+function openProf(kind,key){
+  if(activeTab!=='prof'){pendingProf=[kind,key];activeTab='prof';
+    [...document.querySelectorAll('.tab')].forEach(x=>x.classList.toggle('on',x.dataset.t==='prof'));
+    renderProf();return;}
+  showProf(kind,key);
+}
+async function showProf(kind,key){
+  const d=await j(`/api/occupation?kind=${kind}&key=${encodeURIComponent(key)}`);
+  const o=d.info, det=$('#pdetail'); det.innerHTML='';
+  const head=el('div','card');
+  const roll=d.rollup? `<div class="small muted" style="margin-top:4px">ISCO ${key} · ${d.rollup.minor_title} › ${d.rollup.major_title}</div>`:'';
+  head.innerHTML=`<div class="row" style="justify-content:space-between"><h2 style="font-size:18px">${o.title} ${relBadge(o)}</h2></div>${roll}
+    <div class="tiles" style="margin-top:12px">
+      <div class="tile"><div class="n">${fmt(o.count)}</div><div class="l">titles (franchise-deduped)</div></div>
+      <div class="tile"><div class="n">${o.pct.toFixed(2)}%</div><div class="l">of scannable corpus</div></div>
+      <div class="tile"><div class="n">${o.recall!=null?o.recall:'–'}</div><div class="l">tag recall</div></div>
+    </div>`;
+  det.append(head);
+
+  // prominence (ordinal blue ramp) + sources
+  const two=el('div','two');
+  const pc=el('div','card'); pc.append(el('h2',null,'Prominence'),el('p','cap','How central the character is (subtitle mentions are “unknown”).'));
+  const promOrder=[['protagonist','--seqD'],['recurring','--seqC'],['incidental','--seqB'],['unknown','--seqA']];
+  const pdata=promOrder.map(([k,c])=>({k,n:o.prominence[k]||0,c})).filter(x=>x.n>0);
+  pc.append(bars(pdata,{label:x=>x.k,value:x=>x.n,color:'var(--s1)',
+    valFmt:fmt}));
+  pdata.forEach((x,i)=>{}); // colors per-row:
+  [...pc.querySelectorAll('.fill')].forEach((f,i)=>f.style.background=`var(${pdata[i].c})`);
+  const sc=el('div','card'); sc.append(el('h2',null,'Where it was found'),el('p','cap','Which source produced the confirmed mentions.'));
+  const sdata=Object.entries(d.sources).map(([k,n])=>({k,n})).sort((a,b)=>b.n-a.n);
+  sc.append(bars(sdata,{label:x=>x.k,value:x=>x.n,color:'var(--s3)',valFmt:fmt}));
+  two.append(pc,sc); det.append(two);
+
+  // decade trend (with Count / % toggle)
+  if(d.decades.length){
+    const series=[{title:o.title,points:d.decades}];
+    det.append(trendBlock(d.decades.map(x=>x.decade), series, 'Trend by decade', 'count'));
+  }
+  // titles table
+  const tt=el('div','card');
+  tt.append(el('h2',null,`Anime that name it (${d.titles.length}${d.titles.length>=500?'+ , capped':''})`),
+    el('p','cap','Sorted by popularity. Prominence + source shown; open on AniList.'));
+  const tbl=el('table');
+  tbl.innerHTML=`<thead><tr><th>Title</th><th>Year</th><th>Format</th><th>Prominence</th><th>Source</th><th class="num">Conf.</th></tr></thead>`;
+  const tb=el('tbody');
+  d.titles.forEach(t=>{const tr=el('tr');
+    tr.innerHTML=`<td><a href="https://anilist.co/anime/${t.anilist_id}" target="_blank" rel="noopener">${t.title}</a></td>
+      <td>${t.year||'–'}</td><td>${t.format||'–'}</td><td>${t.prominence}</td>
+      <td class="small muted">${(t.sources||'').replaceAll(',',' · ')}</td><td class="num">${t.confidence}</td>`;
+    tb.append(tr);});
+  tbl.append(tb); tt.append(el('div',null)); tt.lastChild.style.overflowX='auto'; tt.lastChild.append(tbl);
+  det.append(tt);
+  det.scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+// ---- By anime ----
+let animeTimer;
+function renderAnime(){
+  const v=$('#view'); v.innerHTML='';
+  const bar=el('div','card');
+  bar.innerHTML=`<input type="search" id="aq" placeholder="Search an anime title — e.g. Cowboy Bebop, Trigun, Spy x Family">`;
+  v.append(bar);
+  const res=el('div','card'); res.id='ares'; res.append(el('p','cap','Type at least 2 characters.')); v.append(res);
+  const det=el('div'); det.id='adetail'; v.append(det);
+  $('#aq').oninput=()=>{clearTimeout(animeTimer);animeTimer=setTimeout(async()=>{
+    const d=await j(`/api/anime/search?q=${encodeURIComponent($('#aq').value)}`);
+    res.innerHTML=''; res.append(el('h2',null,`${d.results.length} matches`));
+    d.results.forEach(a=>{const it=el('div','list-item');
+      it.innerHTML=`<b>${a.title}</b> <span class="small muted">${a.year||''} · ${a.format||''}</span>`;
+      it.onclick=()=>showAnime(a.anilist_id); res.append(it);});
+  },180);};
+}
+async function showAnime(id){
+  const d=await j(`/api/anime?id=${id}`); const det=$('#adetail'); det.innerHTML='';
+  const a=d.anime; const c=el('div','card');
+  c.innerHTML=`<h2 style="font-size:18px"><a href="https://anilist.co/anime/${a.anilist_id}" target="_blank" rel="noopener">${a.title}</a></h2>
+    <p class="cap">${a.year||'?'} · ${a.format||''} · ${a.episodes||'?'} eps · AniList #${a.anilist_id}${a.mal_id?' · MAL #'+a.mal_id:''}</p>`;
+  if(!d.occupations.length){ c.append(el('p','muted','No professions were confidently detected for this title.')); }
+  else{
+    const tbl=el('table');
+    tbl.innerHTML=`<thead><tr><th>Profession</th><th>Stratum</th><th>Prominence</th><th>Source</th><th class="num">Conf.</th></tr></thead>`;
+    const tb=el('tbody');
+    d.occupations.forEach(o=>{const tr=el('tr');
+      const link=o.stratum==='real'?`<a onclick="openProf('isco','${o.code}')" style="cursor:pointer">${o.title}</a>`:o.title;
+      tr.innerHTML=`<td>${link}</td><td>${o.stratum==='fantasy'?'<span class="badge b-fan">fantasy</span>':'real'}</td>
+        <td>${o.prominence}</td><td class="small muted">${(o.sources||'').replaceAll(',',' · ')}</td><td class="num">${o.confidence}</td>`;
+      tb.append(tr);});
+    tbl.append(tb); const wrap=el('div');wrap.style.overflowX='auto';wrap.append(tbl); c.append(wrap);
+  }
+  det.append(c); det.scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+// ---- Trends ----
+async function renderTrends(){
+  const v=$('#view'); v.innerHTML='';
+  const bar=el('div','card');
+  bar.innerHTML=`<h2>Profession trends by decade</h2><p class="cap">Pick up to 6 professions to compare their share of each decade’s anime. Defaults show a few staples.</p>
+    <div class="row"><input type="text" id="tq" placeholder="type to add a profession…" style="flex:1;min-width:220px"><span id="tchips" class="row"></span></div>
+    <div id="tsug" class="row" style="margin-top:8px"></div>`;
+  v.append(bar);
+  const chart=el('div','card'); chart.id='tchart'; v.append(chart);
+  const lb=el('div','card'); lb.id='tlb'; v.append(lb);
+  const all=(await j('/api/occupations?stratum=all')).occupations;
+  if(!trendSel.length) trendSel=[['isco','2330'],['isco','2211'],['isco','2652'],['isco','5412']];
+  const draw=async()=>{
+    const chips=$('#tchips'); chips.innerHTML='';
+    trendSel.forEach((s,i)=>{const c=el('span','chip');c.textContent=(all.find(o=>o.kind===s[0]&&o.key===s[1])||{}).title||s[1];
+      c.style.cursor='pointer';c.title='remove';c.onclick=()=>{trendSel.splice(i,1);draw();};chips.append(c);});
+    const byKind={};trendSel.forEach(([k,key])=>{(byKind[k]=byKind[k]||[]).push(key);});
+    let series=[],decades=[];
+    for(const k in byKind){const d=await j(`/api/trends?kind=${k}&keys=${byKind[k].join(',')}`);
+      decades=d.decades; series=series.concat(d.series);}
+    // trim leading empty decades (before any selected profession appears)
+    const firstData=Math.min(2020,...series.flatMap(s=>s.points.filter(p=>p.count>0).map(p=>p.decade)));
+    const decs=decades.filter(d=>d>=firstData);
+    chart.innerHTML='';
+    const head=el('div','row'); head.style.justifyContent='space-between'; head.style.alignItems='baseline';
+    head.append(el('h2',null,'Profession trends'), modeToggle(trendMode,m=>{trendMode=m;draw();}));
+    chart.append(head, el('p','cap',TREND_CAP[trendMode]));
+    if(series.length) chart.append(legend(series), lineChart(decs,series,{mode:trendMode}));
+    drawLeaderboard();
+  };
+  $('#tq').oninput=()=>{const q=$('#tq').value.toLowerCase();const sug=$('#tsug');sug.innerHTML='';
+    if(q.length<2)return; all.filter(o=>o.title.toLowerCase().includes(q)).slice(0,8).forEach(o=>{
+      const c=el('span','chip');c.style.cursor='pointer';c.textContent='+ '+o.title;
+      c.onclick=()=>{if(trendSel.length<6&&!trendSel.some(s=>s[0]===o.kind&&s[1]===o.key)){trendSel.push([o.kind,o.key]);$('#tq').value='';sug.innerHTML='';draw();}};sug.append(c);});};
+  draw();
+}
+let trendSel=[]; let trendMode='count'; let trendStratum='real'; let lbCache={};
+
+// ---- boot ----
+(async()=>{
+  SUMMARY=await j('/api/summary');
+  $('#hdrsub').textContent=`${fmt(SUMMARY.anime)} anime · ${fmt(SUMMARY.confirmed_hits)} job mentions · ISCO-08`;
+  render();
+})();
+window.openProf=openProf;
+</script>
+</body>
+</html>

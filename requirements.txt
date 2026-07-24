@@ -1,0 +1,2 @@
+# LLM adjudication (Stage 2) + precision grading. Collection/extraction use only the stdlib.
+anthropic>=0.119

@@ -1,0 +1,26 @@
+# Secrets — never commit
+api_key.txt
+
+# Private working doc — kept out of the public repo (README.md is the public front door)
+PROJECT_PLAN.md
+
+# Local environment / large data / regenerable caches / outputs
+.venv/
+subtitle_mirror/
+anime_professions.db
+anime_professions.db-wal
+anime_professions.db-shm
+exports/
+# default static-export dir; the published copy lives in docs/
+site/
+# 1.6 MB romaji cache, regenerable via tools/fetch_titles.py
+data/titles.json
+data/isco08_gist.txt
+data/isco08_ilo_raw.csv
+__pycache__/
+*.pyc
+.DS_Store
+**/.DS_Store
+
+# NOT ignored (committed on purpose): ap/, web/, ap.py, README.md, requirements.txt,
+# data/isco08.json (the taxonomy), and docs/ (the published static site).
