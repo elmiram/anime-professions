@@ -12,9 +12,9 @@ A few things it found:
 - **Teachers** are the most-named profession (in ~1,370 anime, 7.6%) — anime lives at school.
 - In the **2020s, shopkeepers overtook teachers** for #1, on the back of the isekai/slice-of-life boom.
 - If you count fantasy roles, **being royalty** (1,792 titles) out-appears every real job.
-- **17 renderable occupations are never named**, even across millions of lines of dialogue —
-  financial analysts, systems analysts, driving instructors, printers, fast-food workers, ships'
-  engineers… the back-office and service tail.
+- Of the **~150 jobs a character could plausibly be named as, anime never names 17** — even across
+  millions of lines of dialogue: financial analysts, systems analysts, driving instructors, printers,
+  fast-food workers, ships' engineers… the back-office and service tail. (See *The occupation list* below.)
 - Your niche jobs, quantified: software developers **41**, insurance reps **18** (Trigun's leads are
   literally insurance agents), pharmacists **15**, tram/bus drivers **5**.
 
@@ -32,7 +32,15 @@ royalty, samurai…) — the fictional roles are counted but never folded into t
 
 ## How it works
 
-Text-first, in three layers:
+**The occupation list — 436 trimmed to ~150.** Occupations are classified against **ISCO-08**, the
+UN/ILO's list of **436 official job codes**. Most of those can't be *named* in a story — nobody
+announces "I'm a mineral-processing-plant operator" — so a zero for them would say nothing about
+anime. So the list is trimmed to the **~150 jobs a character could plausibly be identified as** (the
+"renderable" set); the other ~286 are reported as **untestable, not absent**. Anime names 133 of the
+150 — the **17 it never names** are the headline finding, because they *could* plausibly appear yet
+don't. (Every anime is still scanned for all ~150; the trimming is of job *categories*, not titles.)
+
+Detection itself is text-first, in three layers:
 
 1. **Corpus + protagonists** — every anime's plot summary (via AniList).
 2. **Supporting characters** — AniList character bios, with a `role` field (main / supporting /
